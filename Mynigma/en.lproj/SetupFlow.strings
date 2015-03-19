@@ -1,0 +1,252 @@
+
+/* Class = "IBUITextField"; placeholder = "Password"; ObjectID = "0ON-51-YhG"; */
+"0ON-51-YhG.placeholder" = "Password";
+
+/* Class = "IBUILabel"; text = "Email providers, advertisers, government agencies and criminals may access it without your knowledge."; ObjectID = "0OZ-tW-uP5"; */
+"0OZ-tW-uP5.text" = "Email providers, advertisers, government agencies and criminals may access it without your knowledge.";
+
+/* Class = "IBUIBarButtonItem"; title = "More info"; ObjectID = "18I-q3-AQ3"; */
+"18I-q3-AQ3.title" = "More info";
+
+/* Class = "IBUIButton"; normalTitle = "Add another account"; ObjectID = "1jc-3Y-C6L"; */
+"1jc-3Y-C6L.normalTitle" = "Add another account";
+
+/* Class = "IBUINavigationItem"; title = "OAuth"; ObjectID = "2pG-Gp-ObX"; */
+"2pG-Gp-ObX.title" = "OAuth";
+
+/* Class = "IBUIButton"; normalTitle = "Auth required"; ObjectID = "3O4-mt-9hn"; */
+"3O4-mt-9hn.normalTitle" = "Auth required";
+
+/* Class = "IBUITextField"; placeholder = "Port"; ObjectID = "3v1-Tv-koL"; */
+"3v1-Tv-koL.placeholder" = "Port";
+
+/* Class = "IBUITextField"; placeholder = "Port"; ObjectID = "5Rt-9A-aar"; */
+"5Rt-9A-aar.placeholder" = "Port";
+
+/* Class = "IBUITextField"; placeholder = "SMTP user name"; ObjectID = "5ck-pl-K1R"; */
+"5ck-pl-K1R.placeholder" = "SMTP user name";
+
+/* Class = "IBUILabel"; text = "Mynigma is free and open source.\n\n\nYou're welcome.\n\n\nIf you like Mynigma, you can help by rating us on the App Store and recommending us to your friends."; ObjectID = "6Fq-y3-s4l"; */
+"6Fq-y3-s4l.text" = "Mynigma is free and open source.\n\n\nYou're welcome.\n\n\nIf you like Mynigma, you can help by rating us on the App Store and recommending us to your friends.";
+
+/* Class = "IBUITextField"; placeholder = "User name"; ObjectID = "6H7-cm-Aa8"; */
+"6H7-cm-Aa8.placeholder" = "User name";
+
+/* Class = "IBUITextField"; placeholder = "SMTP password"; ObjectID = "8FK-Ao-ocr"; */
+"8FK-Ao-ocr.placeholder" = "SMTP password";
+
+/* Class = "IBUIButton"; normalTitle = "Done"; ObjectID = "8JC-UZ-446"; */
+"8JC-UZ-446.normalTitle" = "Done";
+
+/* Class = "IBUILabel"; text = "Easy"; ObjectID = "94H-pG-req"; */
+"94H-pG-req.text" = "Easy";
+
+/* Class = "IBUILabel"; text = "Free"; ObjectID = "9yb-Se-QmB"; */
+"9yb-Se-QmB.text" = "Free";
+
+/* Class = "IBUILabel"; text = "detect"; ObjectID = "AK3-Og-f5O"; */
+"AK3-Og-f5O.text" = "detect";
+
+/* Class = "IBUILabel"; text = "Mynigma is an email app with built-in privacy."; ObjectID = "CBw-k8-9PO"; */
+"CBw-k8-9PO.text" = "Mynigma is an email app with built-in privacy.";
+
+/* Class = "IBUITextField"; placeholder = "IMAP server"; ObjectID = "CUx-dO-0Y7"; */
+"CUx-dO-0Y7.placeholder" = "IMAP server";
+
+/* Class = "IBUITextField"; placeholder = "IMAP user name"; ObjectID = "CoJ-48-ZnI"; */
+"CoJ-48-ZnI.placeholder" = "IMAP user name";
+
+/* Class = "IBUILabel"; text = "Login"; ObjectID = "D0w-My-jSQ"; */
+"D0w-My-jSQ.text" = "Login";
+
+/* Class = "IBUIButton"; normalTitle = "Show settings"; ObjectID = "DC1-JT-oiJ"; */
+"DC1-JT-oiJ.normalTitle" = "Show settings";
+
+/* Class = "IBUILabel"; text = "We'll log you in using OAuth, giving you more control over your data."; ObjectID = "Gqd-GE-4lw"; */
+"Gqd-GE-4lw.text" = "We'll log you in using OAuth, giving you more control over your data.";
+
+/* Class = "IBUIButton"; normalTitle = "back"; ObjectID = "GuU-L9-Clj"; */
+"GuU-L9-Clj.normalTitle" = "back";
+
+/* Class = "IBUILabel"; text = "Credentials"; ObjectID = "I88-2t-HX3"; */
+"I88-2t-HX3.text" = "Credentials";
+
+/* Class = "IBUITextField"; placeholder = "Your name"; ObjectID = "JhN-4U-Sfj"; */
+"JhN-4U-Sfj.placeholder" = "Your name";
+
+/* Class = "IBUIButton"; normalTitle = "Log in"; ObjectID = "Kco-yf-krr"; */
+"Kco-yf-krr.normalTitle" = "Log in";
+
+/* Class = "IBUITextField"; placeholder = "SMTP password"; ObjectID = "Keb-yl-AhR"; */
+"Keb-yl-AhR.placeholder" = "SMTP password";
+
+/* Class = "IBUITextField"; placeholder = "IMAP password"; ObjectID = "MSJ-us-yka"; */
+"MSJ-us-yka.placeholder" = "IMAP password";
+
+/* Class = "IBUIButton"; normalTitle = "Show settings"; ObjectID = "NZn-wI-bKt"; */
+"NZn-wI-bKt.normalTitle" = "Show settings";
+
+/* Class = "IBUITextField"; placeholder = "Password"; ObjectID = "O3e-hO-SNa"; */
+"O3e-hO-SNa.placeholder" = "Password";
+
+/* Class = "IBUILabel"; text = "Login"; ObjectID = "Oj2-Je-E7J"; */
+"Oj2-Je-E7J.text" = "Login";
+
+/* Class = "IBUITextField"; placeholder = "Password"; ObjectID = "PUK-3k-L85"; */
+"PUK-3k-L85.placeholder" = "Password";
+
+/* Class = "IBUILabel"; text = "Ports & security"; ObjectID = "PnX-rx-98v"; */
+"PnX-rx-98v.text" = "Ports & security";
+
+/* Class = "IBUILabel"; text = "Auth required"; ObjectID = "QuN-3G-9JP"; */
+"QuN-3G-9JP.text" = "Auth required";
+
+/* Class = "IBUILabel"; text = "Your account has been set up!"; ObjectID = "S65-hB-Q5Y"; */
+"S65-hB-Q5Y.text" = "Your account has been set up!";
+
+/* Class = "IBUILabel"; text = "Incoming"; ObjectID = "T67-Pu-KpJ"; */
+"T67-Pu-KpJ.text" = "Incoming";
+
+/* Class = "IBUISegmentedControl"; UPD-SX-h23.segmentTitles[0] = "SSL"; ObjectID = "UPD-SX-h23"; */
+"UPD-SX-h23.segmentTitles[0]" = "SSL";
+
+/* Class = "IBUISegmentedControl"; UPD-SX-h23.segmentTitles[1] = "StartTLS"; ObjectID = "UPD-SX-h23"; */
+"UPD-SX-h23.segmentTitles[1]" = "StartTLS";
+
+/* Class = "IBUISegmentedControl"; UPD-SX-h23.segmentTitles[2] = "none"; ObjectID = "UPD-SX-h23"; */
+"UPD-SX-h23.segmentTitles[2]" = "none";
+
+/* Class = "IBUIButton"; normalTitle = "Privacy policy"; ObjectID = "UX9-IV-hvW"; */
+"UX9-IV-hvW.normalTitle" = "Privacy policy";
+
+/* Class = "IBUISegmentedControl"; Yhj-aM-F7r.segmentTitles[0] = "SSL"; ObjectID = "Yhj-aM-F7r"; */
+"Yhj-aM-F7r.segmentTitles[0]" = "SSL";
+
+/* Class = "IBUISegmentedControl"; Yhj-aM-F7r.segmentTitles[1] = "StartTLS"; ObjectID = "Yhj-aM-F7r"; */
+"Yhj-aM-F7r.segmentTitles[1]" = "StartTLS";
+
+/* Class = "IBUISegmentedControl"; Yhj-aM-F7r.segmentTitles[2] = "none"; ObjectID = "Yhj-aM-F7r"; */
+"Yhj-aM-F7r.segmentTitles[2]" = "none";
+
+/* Class = "IBUITextField"; placeholder = "Port"; ObjectID = "YjX-Fr-CfJ"; */
+"YjX-Fr-CfJ.placeholder" = "Port";
+
+/* Class = "IBUILabel"; text = "Mynigma has automatically recognised these settings. You probably won't need to change them."; ObjectID = "Yq9-1i-rwa"; */
+"Yq9-1i-rwa.text" = "Mynigma has automatically recognised these settings. You probably won't need to change them.";
+
+/* Class = "IBUILabel"; text = "You are logging in directly with your email provider.   As always, no data is sent to us."; ObjectID = "ZMg-jl-qTC"; */
+"ZMg-jl-qTC.text" = "You are logging in directly with your email provider.   As always, no data is sent to us.";
+
+/* Class = "IBUILabel"; text = "What is your display name for outgoing emails?"; ObjectID = "Zzc-ei-GxO"; */
+"Zzc-ei-GxO.text" = "What is your display name for outgoing emails?";
+
+/* Class = "IBUILabel"; text = "Welcome!"; ObjectID = "aZC-2N-PNo"; */
+"aZC-2N-PNo.text" = "Welcome!";
+
+/* Class = "IBUILabel"; text = "Only an encrypted version is stored in the cloud.  It can be opened by sender and recipient. That's it."; ObjectID = "bPV-GO-UnB"; */
+"bPV-GO-UnB.text" = "Only an encrypted version is stored in the cloud.  It can be opened by sender and recipient. That's it.";
+
+/* Class = "IBUILabel"; text = "Credentials"; ObjectID = "c0e-MJ-diB"; */
+"c0e-MJ-diB.text" = "Credentials";
+
+/* Class = "IBUILabel"; text = "Server settings"; ObjectID = "cUc-hr-c1F"; */
+"cUc-hr-c1F.text" = "Server settings";
+
+/* Class = "IBUILabel"; text = "Let's get started"; ObjectID = "dxF-LP-COv"; */
+"dxF-LP-COv.text" = "Let's get started";
+
+/* Class = "IBUILabel"; text = "Safe messages"; ObjectID = "epw-cm-xeT"; */
+"epw-cm-xeT.text" = "Safe messages";
+
+/* Class = "IBUILabel"; text = "Swipe left to get started"; ObjectID = "f5S-it-5Bh"; */
+"f5S-it-5Bh.text" = "Swipe left to get started";
+
+/* Class = "IBUITextField"; placeholder = "SMTP server"; ObjectID = "f5Z-Gg-Sid"; */
+"f5Z-Gg-Sid.placeholder" = "SMTP server";
+
+/* Class = "IBUILabel"; text = "Server hostnames"; ObjectID = "fbD-0y-26Q"; */
+"fbD-0y-26Q.text" = "Server hostnames";
+
+/* Class = "IBUISegmentedControl"; gEn-q9-fm1.segmentTitles[0] = "SSL"; ObjectID = "gEn-q9-fm1"; */
+"gEn-q9-fm1.segmentTitles[0]" = "SSL";
+
+/* Class = "IBUISegmentedControl"; gEn-q9-fm1.segmentTitles[1] = "StartTLS"; ObjectID = "gEn-q9-fm1"; */
+"gEn-q9-fm1.segmentTitles[1]" = "StartTLS";
+
+/* Class = "IBUISegmentedControl"; gEn-q9-fm1.segmentTitles[2] = "none"; ObjectID = "gEn-q9-fm1"; */
+"gEn-q9-fm1.segmentTitles[2]" = "none";
+
+/* Class = "IBUITextField"; placeholder = "Port"; ObjectID = "iOv-If-3s8"; */
+"iOv-If-3s8.placeholder" = "Port";
+
+/* Class = "IBUILabel"; text = "Outgoing"; ObjectID = "imn-ct-dF3"; */
+"imn-ct-dF3.text" = "Outgoing";
+
+/* Class = "IBUILabel"; text = "Success"; ObjectID = "lli-vt-89F"; */
+"lli-vt-89F.text" = "Success";
+
+/* Class = "IBUIButton"; normalTitle = "Auth required"; ObjectID = "mrb-hX-XLN"; */
+"mrb-hX-XLN.normalTitle" = "Auth required";
+
+/* Class = "IBUILabel"; text = "Messages to other Mynigma users will be safe by default. All you need to do is send an open message first."; ObjectID = "n6c-qo-Xkl"; */
+"n6c-qo-Xkl.text" = "Messages to other Mynigma users will be safe by default. All you need to do is send an open message first.";
+
+/* Class = "IBUILabel"; text = "A normal email is a postcard in the cloud."; ObjectID = "nkW-5o-zPG"; */
+"nkW-5o-zPG.text" = "A normal email is a postcard in the cloud.";
+
+/* Class = "IBUITextField"; placeholder = "IMAP server"; ObjectID = "nmJ-Hj-kEk"; */
+"nmJ-Hj-kEk.placeholder" = "IMAP server";
+
+/* Class = "IBUILabel"; text = "Log in directly with your email provider. Nothing is sent to us. Ever."; ObjectID = "nsD-mu-QBA"; */
+"nsD-mu-QBA.text" = "Log in directly with your email provider. Nothing is sent to us. Ever.";
+
+/* Class = "IBUITextField"; placeholder = "SMTP server"; ObjectID = "pu5-FF-eRY"; */
+"pu5-FF-eRY.placeholder" = "SMTP server";
+
+/* Class = "IBUILabel"; text = "Establishing a connection\nto your email provider...\n\n\n\n\n\n\nYour messages and contacts are none of our business. This app will never send any data to us at all."; ObjectID = "rif-lA-0se"; */
+"rif-lA-0se.text" = "Establishing a connection\nto your email provider...\n\n\n\n\n\n\nYour messages and contacts are none of our business. This app will never send any data to us at all.";
+
+/* Class = "IBUILabel"; text = "Auth required"; ObjectID = "sCt-z6-qEz"; */
+"sCt-z6-qEz.text" = "Auth required";
+
+/* Class = "IBUILabel"; text = "Connecting"; ObjectID = "tUV-Aq-Qck"; */
+"tUV-Aq-Qck.text" = "Connecting";
+
+/* Class = "IBUITextField"; placeholder = "Email address"; ObjectID = "trg-2f-3YN"; */
+"trg-2f-3YN.placeholder" = "Email address";
+
+/* Class = "IBUIButton"; normalTitle = "detect"; ObjectID = "tzQ-u5-I10"; */
+"tzQ-u5-I10.normalTitle" = "detect";
+
+/* Class = "IBUIButton"; normalTitle = "detect"; ObjectID = "uAf-SU-Pfb"; */
+"uAf-SU-Pfb.normalTitle" = "detect";
+
+/* Class = "IBUILabel"; text = "Mynigma has automatically recognised these settings. You probably won't need to change them."; ObjectID = "uXR-mE-jAi"; */
+"uXR-mE-jAi.text" = "Mynigma has automatically recognised these settings. You probably won't need to change them.";
+
+/* Class = "IBUILabel"; text = "The reply and all future messages will be safe."; ObjectID = "uZZ-CI-cYQ"; */
+"uZZ-CI-cYQ.text" = "The reply and all future messages will be safe.";
+
+/* Class = "IBUISegmentedControl"; uyH-Yf-rwx.segmentTitles[0] = "SSL"; ObjectID = "uyH-Yf-rwx"; */
+"uyH-Yf-rwx.segmentTitles[0]" = "SSL";
+
+/* Class = "IBUISegmentedControl"; uyH-Yf-rwx.segmentTitles[1] = "StartTLS"; ObjectID = "uyH-Yf-rwx"; */
+"uyH-Yf-rwx.segmentTitles[1]" = "StartTLS";
+
+/* Class = "IBUISegmentedControl"; uyH-Yf-rwx.segmentTitles[2] = "none"; ObjectID = "uyH-Yf-rwx"; */
+"uyH-Yf-rwx.segmentTitles[2]" = "none";
+
+/* Class = "IBUILabel"; text = "A safe email is protected by an electronic envelope."; ObjectID = "vo9-h2-1U2"; */
+"vo9-h2-1U2.text" = "A safe email is protected by an electronic envelope.";
+
+/* Class = "IBUILabel"; text = "Open messages"; ObjectID = "x5k-RT-3pl"; */
+"x5k-RT-3pl.text" = "Open messages";
+
+/* Class = "IBUIButton"; normalTitle = "Privacy policy"; ObjectID = "xO7-xs-JV3"; */
+"xO7-xs-JV3.normalTitle" = "Privacy policy";
+
+/* Class = "IBUITextField"; placeholder = "SMTP user name"; ObjectID = "xXc-KM-bJs"; */
+"xXc-KM-bJs.placeholder" = "SMTP user name";
+
+/* Class = "IBUILabel"; text = "detect"; ObjectID = "zYI-M4-DoM"; */
+"zYI-M4-DoM.text" = "detect";

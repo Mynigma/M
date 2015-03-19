@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="Version40" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6738" systemVersion="14B25" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="ABContactDetail" representedClassName="ABContactDetail" syncable="YES">
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="linkedToContact" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Contact" inverseName="addressBookContact" inverseEntity="Contact" syncable="YES"/>
+    </entity>
+    <entity name="Contact" representedClassName="Contact" syncable="YES">
+        <attribute name="dateLastContacted" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="hasMynigma" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="numberOfTimesContacted" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="addressBookContact" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="ABContactDetail" inverseName="linkedToContact" inverseEntity="ABContactDetail" syncable="YES"/>
+        <relationship name="emailAddresses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EmailContactDetail" inverseName="linkedToContact" inverseEntity="EmailContactDetail" syncable="YES"/>
+    </entity>
+    <entity name="DeviceMessage" representedClassName="DeviceMessage" parentEntity="EmailMessage" syncable="YES">
+        <attribute name="burnAfterReading" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="expiryDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="messageCommand" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="payloadData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="threadID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="dataSyncMessageForDevice" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MynigmaDevice" inverseName="syncDataMessage" inverseEntity="MynigmaDevice" syncable="YES"/>
+        <relationship name="discoveryMessageForDevice" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MynigmaDevice" inverseName="discoveryMessage" inverseEntity="MynigmaDevice" syncable="YES"/>
+        <relationship name="sender" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MynigmaDevice" inverseName="sentDeviceMessages" inverseEntity="MynigmaDevice" syncable="YES"/>
+        <relationship name="targets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MynigmaDevice" inverseName="receivedDeviceMessages" inverseEntity="MynigmaDevice" syncable="YES"/>
+    </entity>
+    <entity name="EmailAddress" representedClassName="EmailAddress" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateAdded" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateCurrentKeyAnchored" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="allKeys" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MynigmaPublicKey" inverseName="emailAddresses" inverseEntity="MynigmaPublicKey" syncable="YES"/>
+        <relationship name="currentKey" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MynigmaPublicKey" inverseName="currentForEmailAddress" inverseEntity="MynigmaPublicKey" syncable="YES"/>
+        <relationship name="expectationsFrom" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KeyExpectation" inverseName="toAddress" inverseEntity="KeyExpectation" syncable="YES"/>
+        <relationship name="expectationsTo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KeyExpectation" inverseName="fromAddress" inverseEntity="KeyExpectation" syncable="YES"/>
+    </entity>
+    <entity name="EmailContactDetail" representedClassName="EmailContactDetail" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currentReceivedDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="currentSentDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateLastContacted" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="fullName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasUsedMac" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="lastCheckedWithServer" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lastSentPublicKeyInHeader" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="licencedUntil" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="numberOfTimesContacted" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="sentToServer" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="currentPublicKey" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MynigmaPublicKey" inverseName="currentKeyForEmail" inverseEntity="MynigmaPublicKey" syncable="YES"/>
+        <relationship name="currentReceivedPair" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="MynigmaPrivateKey" inverseName="currentReceivedForEmail" inverseEntity="MynigmaPrivateKey" syncable="YES"/>
+        <relationship name="currentSentPair" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="MynigmaPrivateKey" inverseName="currentSentForEmail" inverseEntity="MynigmaPrivateKey" syncable="YES"/>
+        <relationship name="linkedToContact" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Contact" inverseName="emailAddresses" inverseEntity="Contact" syncable="YES"/>
+        <relationship name="messages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EmailMessage" inverseName="emails" inverseEntity="EmailMessage" syncable="YES"/>
+        <relationship name="publicKeys" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MynigmaPublicKey" inverseName="keyForEmail" inverseEntity="MynigmaPublicKey" syncable="YES"/>
+        <relationship name="senderAddressForAccount" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IMAPAccountSetting" inverseName="senderAddresses" inverseEntity="IMAPAccountSetting" syncable="YES"/>
+    </entity>
+    <entity name="EmailFooter" representedClassName="EmailFooter" syncable="YES">
+        <attribute name="htmlContent" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="inlineImages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FileAttachment" inverseName="inlineImageForFooter" inverseEntity="FileAttachment" syncable="YES"/>
+        <relationship name="senderAddresses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="IMAPAccountSetting" inverseName="footer" inverseEntity="IMAPAccountSetting" syncable="YES"/>
+        <relationship name="standardForUser" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="UserSettings" inverseName="standardFooter" inverseEntity="UserSettings" syncable="YES"/>
+    </entity>
+    <entity name="EmailMessage" representedClassName="EmailMessage" syncable="YES">
+        <attribute name="dateSent" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="hasHadInstancesAtSomePoint" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="messageid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="searchString" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="allAttachments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FileAttachment" inverseName="attachedAllToMessage" inverseEntity="FileAttachment" syncable="YES"/>
+        <relationship name="attachments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FileAttachment" inverseName="attachedToMessage" inverseEntity="FileAttachment" syncable="YES"/>
+        <relationship name="emails" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EmailContactDetail" inverseName="messages" inverseEntity="EmailContactDetail" syncable="YES"/>
+        <relationship name="instances" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EmailMessageInstance" inverseName="message" inverseEntity="EmailMessageInstance" syncable="YES"/>
+        <relationship name="messageData" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="EmailMessageData" inverseName="message" inverseEntity="EmailMessageData" syncable="YES"/>
+    </entity>
+    <entity name="EmailMessageData" representedClassName="EmailMessageData" syncable="YES">
+        <attribute name="addressData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="body" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fromName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasImages" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="htmlBody" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="loadRemoteImages" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="mainPartEncoding" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="mainPartID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="size" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="subject" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="message" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EmailMessage" inverseName="messageData" inverseEntity="EmailMessage" syncable="YES"/>
+    </entity>
+    <entity name="EmailMessageInstance" representedClassName="EmailMessageInstance" syncable="YES">
+        <attribute name="flags" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="important" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="Integer 64" syncable="YES"/>
+        <relationship name="addedToFolder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IMAPFolderSetting" inverseName="addedMessages" inverseEntity="IMAPFolderSetting" syncable="YES"/>
+        <relationship name="deletedFromFolder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IMAPFolderSetting" inverseName="deletedMessages" inverseEntity="IMAPFolderSetting" syncable="YES"/>
+        <relationship name="flagsChangedInFolder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IMAPFolderSetting" inverseName="flagsChangedOnMessages" inverseEntity="IMAPFolderSetting" syncable="YES"/>
+        <relationship name="hasLabels" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GmailLabelSetting" inverseName="attachedToMessages" inverseEntity="GmailLabelSetting" syncable="YES"/>
+        <relationship name="inFolder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IMAPFolderSetting" inverseName="containsMessages" inverseEntity="IMAPFolderSetting" syncable="YES"/>
+        <relationship name="labelsChangedInFolder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GmailLabelSetting" inverseName="labelsChangedOnMessages" inverseEntity="GmailLabelSetting" syncable="YES"/>
+        <relationship name="message" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EmailMessage" inverseName="instances" inverseEntity="EmailMessage" syncable="YES"/>
+        <relationship name="movedAwayFromFolder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IMAPFolderSetting" inverseName="movedAwayMessages" inverseEntity="IMAPFolderSetting" syncable="YES"/>
+        <relationship name="movedFromInstance" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EmailMessageInstance" inverseName="movedToInstance" inverseEntity="EmailMessageInstance" syncable="YES"/>
+        <relationship name="movedToInstance" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EmailMessageInstance" inverseName="movedFromInstance" inverseEntity="EmailMessageInstance" syncable="YES"/>
+        <relationship name="unreadInFolder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IMAPFolderSetting" inverseName="unreadMessages" inverseEntity="IMAPFolderSetting" syncable="YES"/>
+        <relationship name="unreadWithLabels" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GmailLabelSetting" inverseName="attachedToUnreadMessages" inverseEntity="GmailLabelSetting" syncable="YES"/>
+    </entity>
+    <entity name="EncryptedMessage" representedClassName="EncryptedMessage" parentEntity="EmailMessage" syncable="YES"/>
+    <entity name="FileAttachment" representedClassName="FileAttachment" syncable="YES">
+        <attribute name="contentid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contentType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="decryptionStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="downloadProgress" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="encoding" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="fileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hashedValue" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="partID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="privateBookmark" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="privateEncryptedDataBookmark" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="privateEncryptedDataURLString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="privateURLString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="publicBookmark" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="publicURLString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="remoteURLString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="size" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="uniqueID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="attachedAllToMessage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EmailMessage" inverseName="allAttachments" inverseEntity="EmailMessage" syncable="YES"/>
+        <relationship name="attachedAllToTemplate" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MessageTemplate" inverseName="allAttachments" inverseEntity="MessageTemplate" syncable="YES"/>
+        <relationship name="attachedToMessage" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="EmailMessage" inverseName="attachments" inverseEntity="EmailMessage" syncable="YES"/>
+        <relationship name="attachedToTemplate" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MessageTemplate" inverseName="attachments" inverseEntity="MessageTemplate" syncable="YES"/>
+        <relationship name="inlineImageForFooter" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EmailFooter" inverseName="inlineImages" inverseEntity="EmailFooter" syncable="YES"/>
+        <relationship name="rawAttachmentForEncryptedMessage" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="MynigmaMessage" inverseName="rawAttachments" inverseEntity="MynigmaMessage" syncable="YES"/>
+    </entity>
+    <entity name="GenericPublicKey" representedClassName="GenericPublicKey" syncable="YES"/>
+    <entity name="GmailAccountSetting" representedClassName="GmailAccountSetting" parentEntity="IMAPAccountSetting" syncable="YES">
+        <relationship name="allMailFolder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IMAPFolderSetting" inverseName="allMailForAccount" inverseEntity="IMAPFolderSetting" syncable="YES"/>
+        <relationship name="importantLabel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GmailLabelSetting" inverseName="importantForAccount" inverseEntity="GmailLabelSetting" syncable="YES"/>
+        <relationship name="starredLabel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GmailLabelSetting" inverseName="starredForAccount" inverseEntity="GmailLabelSetting" syncable="YES"/>
+    </entity>
+    <entity name="GmailLabelSetting" representedClassName="GmailLabelSetting" parentEntity="IMAPFolderSetting" syncable="YES">
+        <attribute name="displayColour" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="isSystemLabel" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="labelName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="attachedToMessages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EmailMessageInstance" inverseName="hasLabels" inverseEntity="EmailMessageInstance" syncable="YES"/>
+        <relationship name="attachedToUnreadMessages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EmailMessageInstance" inverseName="unreadWithLabels" inverseEntity="EmailMessageInstance" syncable="YES"/>
+        <relationship name="importantForAccount" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GmailAccountSetting" inverseName="importantLabel" inverseEntity="GmailAccountSetting" syncable="YES"/>
+        <relationship name="labelsChangedOnMessages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EmailMessageInstance" inverseName="labelsChangedInFolder" inverseEntity="EmailMessageInstance" syncable="YES"/>
+        <relationship name="starredForAccount" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GmailAccountSetting" inverseName="starredLabel" inverseEntity="GmailAccountSetting" syncable="YES"/>
+    </entity>
+    <entity name="IMAPAccountSetting" representedClassName="IMAPAccountSetting" syncable="YES">
+        <attribute name="accountID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currentKeyPairLabel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="displayName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emailAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="footerUsage" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="hasBeenVerified" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasRequestedWelcomeMessage" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="incomingAuthType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="incomingEncryption" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="incomingPasswordRef" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="incomingPort" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="incomingServer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="incomingUserName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastChecked" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lastUpdatedFolders" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="outgoingAuthType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="outgoingEmail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="outgoingEncryption" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="outgoingPasswordRef" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="outgoingPort" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="outgoingServer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="outgoingUserName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="senderEmail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="senderName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sentMessagesCopiedIntoSentFolder" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="shouldUse" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="signUpMessageID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="supportsIDLE" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="supportsMODSEQ" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="supportsQRESYNC" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="unreadCount" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="binFolder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IMAPFolderSetting" inverseName="binForAccount" inverseEntity="IMAPFolderSetting" syncable="YES"/>
+        <relationship name="draftsFolder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IMAPFolderSetting" inverseName="draftsForAccount" inverseEntity="IMAPFolderSetting" syncable="YES"/>
+        <relationship name="folders" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="IMAPFolderSetting" inverseName="inIMAPAccount" inverseEntity="IMAPFolderSetting" syncable="YES"/>
+        <relationship name="footer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EmailFooter" inverseName="senderAddresses" inverseEntity="EmailFooter" syncable="YES"/>
+        <relationship name="inboxFolder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IMAPFolderSetting" inverseName="inboxForAccount" inverseEntity="IMAPFolderSetting" syncable="YES"/>
+        <relationship name="mynigmaFolder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IMAPFolderSetting" inverseName="mynigmaFolderForAccount" inverseEntity="IMAPFolderSetting" syncable="YES"/>
+        <relationship name="outboxFolder" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="IMAPFolderSetting" inverseName="outboxForAccount" inverseEntity="IMAPFolderSetting" syncable="YES"/>
+        <relationship name="preferredAccountForUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserSettings" inverseName="preferredAccount" inverseEntity="UserSettings" syncable="YES"/>
+        <relationship name="senderAddresses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EmailContactDetail" inverseName="senderAddressForAccount" inverseEntity="EmailContactDetail" syncable="YES"/>
+        <relationship name="sentFolder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IMAPFolderSetting" inverseName="sentForAccount" inverseEntity="IMAPFolderSetting" syncable="YES"/>
+        <relationship name="settingsAccountForUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserSettings" inverseName="settingsAccount" inverseEntity="UserSettings" syncable="YES"/>
+        <relationship name="spamFolder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IMAPFolderSetting" inverseName="spamForAccount" inverseEntity="IMAPFolderSetting" syncable="YES"/>
+        <relationship name="usedByDevices" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MynigmaDevice" inverseName="usingAccounts" inverseEntity="MynigmaDevice" syncable="YES"/>
+        <relationship name="user" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="UserSettings" inverseName="accounts" inverseEntity="UserSettings" syncable="YES"/>
+    </entity>
+    <entity name="IMAPFolderSetting" representedClassName="IMAPFolderSetting" syncable="YES">
+        <attribute name="displayName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="downloadedFromNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="downloadedFromUID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="highestUID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="isShownAsStandard" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isSubscribed" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="lastNewCheck" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lastOldCheck" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="modSequenceValue" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="path" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uidNext" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="uidValidity" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="addedMessages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EmailMessageInstance" inverseName="addedToFolder" inverseEntity="EmailMessageInstance" syncable="YES"/>
+        <relationship name="allMailForAccount" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GmailAccountSetting" inverseName="allMailFolder" inverseEntity="GmailAccountSetting" syncable="YES"/>
+        <relationship name="binForAccount" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IMAPAccountSetting" inverseName="binFolder" inverseEntity="IMAPAccountSetting" syncable="YES"/>
+        <relationship name="containsMessages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EmailMessageInstance" inverseName="inFolder" inverseEntity="EmailMessageInstance" syncable="YES"/>
+        <relationship name="deletedMessages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EmailMessageInstance" inverseName="deletedFromFolder" inverseEntity="EmailMessageInstance" syncable="YES"/>
+        <relationship name="draftsForAccount" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IMAPAccountSetting" inverseName="draftsFolder" inverseEntity="IMAPAccountSetting" syncable="YES"/>
+        <relationship name="flagsChangedOnMessages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EmailMessageInstance" inverseName="flagsChangedInFolder" inverseEntity="EmailMessageInstance" syncable="YES"/>
+        <relationship name="inboxForAccount" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IMAPAccountSetting" inverseName="inboxFolder" inverseEntity="IMAPAccountSetting" syncable="YES"/>
+        <relationship name="inIMAPAccount" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IMAPAccountSetting" inverseName="folders" inverseEntity="IMAPAccountSetting" syncable="YES"/>
+        <relationship name="movedAwayMessages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EmailMessageInstance" inverseName="movedAwayFromFolder" inverseEntity="EmailMessageInstance" syncable="YES"/>
+        <relationship name="mynigmaFolderForAccount" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IMAPAccountSetting" inverseName="mynigmaFolder" inverseEntity="IMAPAccountSetting" syncable="YES"/>
+        <relationship name="outboxForAccount" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IMAPAccountSetting" inverseName="outboxFolder" inverseEntity="IMAPAccountSetting" syncable="YES"/>
+        <relationship name="parentFolder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IMAPFolderSetting" inverseName="subFolders" inverseEntity="IMAPFolderSetting" syncable="YES"/>
+        <relationship name="sentForAccount" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IMAPAccountSetting" inverseName="sentFolder" inverseEntity="IMAPAccountSetting" syncable="YES"/>
+        <relationship name="spamForAccount" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IMAPAccountSetting" inverseName="spamFolder" inverseEntity="IMAPAccountSetting" syncable="YES"/>
+        <relationship name="subFolders" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="IMAPFolderSetting" inverseName="parentFolder" inverseEntity="IMAPFolderSetting" syncable="YES"/>
+        <relationship name="unreadMessages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EmailMessageInstance" inverseName="unreadInFolder" inverseEntity="EmailMessageInstance" syncable="YES"/>
+    </entity>
+    <entity name="IMAPSenderAddress" representedClassName="IMAPSenderAddress" syncable="YES">
+        <attribute name="dateLastUsed" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasBeenVerified" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numberOfTimesUsed" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="KeyExpectation" representedClassName="KeyExpectation" syncable="YES">
+        <attribute name="dateAnchored" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="expectedSignatureKey" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MynigmaPublicKey" inverseName="expectedBy" inverseEntity="MynigmaPublicKey" syncable="YES"/>
+        <relationship name="fromAddress" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EmailAddress" inverseName="expectationsTo" inverseEntity="EmailAddress" syncable="YES"/>
+        <relationship name="toAddress" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EmailAddress" inverseName="expectationsFrom" inverseEntity="EmailAddress" syncable="YES"/>
+    </entity>
+    <entity name="MessageTemplate" representedClassName="MessageTemplate" syncable="YES">
+        <attribute name="dateSaved" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="displayName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="htmlBody" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastUsed" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="recipients" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="subject" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="allAttachments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FileAttachment" inverseName="attachedAllToTemplate" inverseEntity="FileAttachment" syncable="YES"/>
+        <relationship name="attachments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FileAttachment" inverseName="attachedToTemplate" inverseEntity="FileAttachment" syncable="YES"/>
+    </entity>
+    <entity name="MynigmaDeclaration" representedClassName="MynigmaDeclaration" syncable="YES">
+        <attribute name="data" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="dateIssued" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="deviceId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="keyLabel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ownersEmail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usersEmail" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="declaresKey" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="MynigmaPublicKey" inverseName="declaration" inverseEntity="MynigmaPublicKey" syncable="YES"/>
+        <relationship name="usedInMessages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MynigmaMessage" inverseName="declaration" inverseEntity="MynigmaMessage" syncable="YES"/>
+    </entity>
+    <entity name="MynigmaDevice" representedClassName="MynigmaDevice" syncable="YES">
+        <attribute name="alreadyProcessed" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="dateAdded" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="deviceId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="displayName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isTrusted" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="lastSynced" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lastUpdatedInfo" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="mynigmaVersion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="operatingSystemIdentifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="syncDataStale" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="currentDeviceForUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserSettings" inverseName="currentDevice" inverseEntity="UserSettings" syncable="YES"/>
+        <relationship name="discoveryMessage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DeviceMessage" inverseName="discoveryMessageForDevice" inverseEntity="DeviceMessage" syncable="YES"/>
+        <relationship name="receivedDeviceMessages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DeviceMessage" inverseName="targets" inverseEntity="DeviceMessage" syncable="YES"/>
+        <relationship name="sentDeviceMessages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DeviceMessage" inverseName="sender" inverseEntity="DeviceMessage" syncable="YES"/>
+        <relationship name="syncDataMessage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DeviceMessage" inverseName="dataSyncMessageForDevice" inverseEntity="DeviceMessage" syncable="YES"/>
+        <relationship name="syncKey" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MynigmaPublicKey" inverseName="syncKeyForDevice" inverseEntity="MynigmaPublicKey" syncable="YES"/>
+        <relationship name="user" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="UserSettings" inverseName="hasDevices" inverseEntity="UserSettings" syncable="YES"/>
+        <relationship name="usingAccounts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="IMAPAccountSetting" inverseName="usedByDevices" inverseEntity="IMAPAccountSetting" syncable="YES"/>
+    </entity>
+    <entity name="MynigmaMessage" representedClassName="MynigmaMessage" parentEntity="EncryptedMessage" syncable="YES">
+        <attribute name="decryptionStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mynData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="mynDataPartID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sessionKeyData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <relationship name="declaration" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MynigmaDeclaration" inverseName="usedInMessages" inverseEntity="MynigmaDeclaration" syncable="YES"/>
+        <relationship name="rawAttachments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FileAttachment" inverseName="rawAttachmentForEncryptedMessage" inverseEntity="FileAttachment" syncable="YES"/>
+    </entity>
+    <entity name="MynigmaPrivateKey" representedClassName="MynigmaPrivateKey" parentEntity="MynigmaPublicKey" syncable="YES">
+        <attribute name="privateDecrKeyRef" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="privateSignKeyRef" optional="YES" attributeType="Binary" syncable="YES"/>
+        <relationship name="currentReceivedForEmail" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EmailContactDetail" inverseName="currentReceivedPair" inverseEntity="EmailContactDetail" syncable="YES"/>
+        <relationship name="currentSentForEmail" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EmailContactDetail" inverseName="currentSentPair" inverseEntity="EmailContactDetail" syncable="YES"/>
+    </entity>
+    <entity name="MynigmaPublicKey" representedClassName="MynigmaPublicKey" parentEntity="GenericPublicKey" syncable="YES">
+        <attribute name="dateCreated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateDeclared" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateObtained" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="emailAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstAnchored" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="fromServer" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isCompromised" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isCurrentKey" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="keyLabel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="publicEncrKeyRef" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="publicVerifyKeyRef" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="currentForEmailAddress" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EmailAddress" inverseName="currentKey" inverseEntity="EmailAddress" syncable="YES"/>
+        <relationship name="currentKeyForEmail" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EmailContactDetail" inverseName="currentPublicKey" inverseEntity="EmailContactDetail" syncable="YES"/>
+        <relationship name="declaration" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="MynigmaDeclaration" inverseName="declaresKey" inverseEntity="MynigmaDeclaration" syncable="YES"/>
+        <relationship name="emailAddresses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EmailAddress" inverseName="allKeys" inverseEntity="EmailAddress" syncable="YES"/>
+        <relationship name="expectedBy" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="KeyExpectation" inverseName="expectedSignatureKey" inverseEntity="KeyExpectation" syncable="YES"/>
+        <relationship name="introducesKeys" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MynigmaPublicKey" inverseName="isIntroducedByKeys" inverseEntity="MynigmaPublicKey" syncable="YES"/>
+        <relationship name="isIntroducedByKeys" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MynigmaPublicKey" inverseName="introducesKeys" inverseEntity="MynigmaPublicKey" syncable="YES"/>
+        <relationship name="keyForEmail" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="EmailContactDetail" inverseName="publicKeys" inverseEntity="EmailContactDetail" syncable="YES"/>
+        <relationship name="syncKeyForDevice" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MynigmaDevice" inverseName="syncKey" inverseEntity="MynigmaDevice" syncable="YES"/>
+    </entity>
+    <entity name="PGPMessage" representedClassName="PGPMessage" parentEntity="EncryptedMessage" syncable="YES"/>
+    <entity name="PGPPrivateKey" representedClassName="PGPPrivateKey" parentEntity="PGPPublicKey" syncable="YES"/>
+    <entity name="PGPPublicKey" representedClassName="PGPPublicKey" parentEntity="GenericPublicKey" syncable="YES"/>
+    <entity name="SMIMEMessage" representedClassName="SMIMEMessage" parentEntity="EncryptedMessage" syncable="YES"/>
+    <entity name="SMIMEPrivateKey" representedClassName="SMIMEPrivateKey" parentEntity="SMIMEPublicKey" syncable="YES"/>
+    <entity name="SMIMEPublicKey" representedClassName="SMIMEPublicKey" parentEntity="GenericPublicKey" syncable="YES">
+        <attribute name="issuer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="keychainRef" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="keyUsage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="serialNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="signature" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="signatureAlgorithm" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subject" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbprint" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="thumbprintAlgorithm" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="validFrom" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="validUntil" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="UserSettings" representedClassName="UserSettings" syncable="YES">
+        <attribute name="created" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="haveExplainedContactsAccess" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="lastCorruptVersion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastUsed" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lastVersionUsed" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="personalUse" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="privacyProtectionOn" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="settingsData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="showNewbieExplanations" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="accounts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="IMAPAccountSetting" inverseName="user" inverseEntity="IMAPAccountSetting" syncable="YES"/>
+        <relationship name="currentDevice" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MynigmaDevice" inverseName="currentDeviceForUser" inverseEntity="MynigmaDevice" syncable="YES"/>
+        <relationship name="hasDevices" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MynigmaDevice" inverseName="user" inverseEntity="MynigmaDevice" syncable="YES"/>
+        <relationship name="preferredAccount" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IMAPAccountSetting" inverseName="preferredAccountForUser" inverseEntity="IMAPAccountSetting" syncable="YES"/>
+        <relationship name="settingsAccount" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IMAPAccountSetting" inverseName="settingsAccountForUser" inverseEntity="IMAPAccountSetting" syncable="YES"/>
+        <relationship name="standardFooter" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EmailFooter" inverseName="standardForUser" inverseEntity="EmailFooter" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ABContactDetail" positionX="0" positionY="0" width="128" height="118"/>
+        <element name="Contact" positionX="0" positionY="0" width="128" height="120"/>
+        <element name="DeviceMessage" positionX="288" positionY="162" width="128" height="178"/>
+        <element name="EmailAddress" positionX="-477" positionY="-243" width="128" height="150"/>
+        <element name="EmailContactDetail" positionX="367" positionY="-351" width="128" height="315"/>
+        <element name="EmailFooter" positionX="457" positionY="18" width="128" height="118"/>
+        <element name="EmailMessage" positionX="414" positionY="285" width="128" height="180"/>
+        <element name="EmailMessageData" positionX="205" positionY="402" width="128" height="208"/>
+        <element name="EmailMessageInstance" positionX="27" positionY="405" width="128" height="270"/>
+        <element name="EncryptedMessage" positionX="-432" positionY="-198" width="128" height="45"/>
+        <element name="FileAttachment" positionX="-162" positionY="396" width="128" height="405"/>
+        <element name="GenericPublicKey" positionX="-477" positionY="-243" width="128" height="45"/>
+        <element name="GmailAccountSetting" positionX="214" positionY="243" width="128" height="90"/>
+        <element name="GmailLabelSetting" positionX="-326" positionY="-273" width="128" height="165"/>
+        <element name="IMAPAccountSetting" positionX="-495" positionY="-252" width="128" height="735"/>
+        <element name="IMAPFolderSetting" positionX="-684" positionY="-261" width="128" height="495"/>
+        <element name="IMAPSenderAddress" positionX="0" positionY="-174" width="128" height="120"/>
+        <element name="KeyExpectation" positionX="-477" positionY="-243" width="128" height="103"/>
+        <element name="MessageTemplate" positionX="-477" positionY="-243" width="128" height="163"/>
+        <element name="MynigmaDeclaration" positionX="205" positionY="-291" width="128" height="165"/>
+        <element name="MynigmaDevice" positionX="-11" positionY="-396" width="128" height="328"/>
+        <element name="MynigmaMessage" positionX="-171" positionY="-54" width="128" height="133"/>
+        <element name="MynigmaPrivateKey" positionX="187" positionY="-58" width="128" height="103"/>
+        <element name="MynigmaPublicKey" positionX="-398" positionY="333" width="128" height="358"/>
+        <element name="PGPMessage" positionX="-477" positionY="-243" width="128" height="45"/>
+        <element name="PGPPrivateKey" positionX="-459" positionY="-225" width="128" height="45"/>
+        <element name="PGPPublicKey" positionX="-468" positionY="-234" width="128" height="45"/>
+        <element name="SMIMEMessage" positionX="-423" positionY="-189" width="128" height="45"/>
+        <element name="SMIMEPrivateKey" positionX="-441" positionY="-207" width="128" height="45"/>
+        <element name="SMIMEPublicKey" positionX="-450" positionY="-216" width="128" height="223"/>
+        <element name="UserSettings" positionX="-324" positionY="2" width="128" height="300"/>
+    </elements>
+</model>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6249" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoveMessageContentViewController">
+            <connections>
+                <outlet property="horizontalCenterConstraint" destination="FTn-g9-dc9" id="c8k-zM-5k5"/>
+                <outlet property="markStarredOptionView" destination="8Ba-h7-aZT" id="mdZ-hX-Lu1"/>
+                <outlet property="markUnreadOptionView" destination="8Ih-fu-CwD" id="8M2-qU-csl"/>
+                <outlet property="moveElsewhereOptionView" destination="Qvi-Ia-h7g" id="PfM-k6-623"/>
+                <outlet property="moveToSpamOptionView" destination="1VI-KY-U7U" id="4j1-vk-dUg"/>
+                <outlet property="moveToTrashOptionView" destination="zcI-hq-8W9" id="Gz9-mv-YDu"/>
+                <outlet property="selectMoreOptionView" destination="SPe-cO-PGz" id="xI3-5H-2EQ"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Vdt-R1-ADZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="502" height="410"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ba-h7-aZT" customClass="MoveMessageImageView">
+                    <rect key="frame" x="202" y="205" width="100" height="100"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="FpR-8M-Prr"/>
+                        <constraint firstAttribute="width" constant="100" id="hva-yV-lqS"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="mainImage" value="starred48.png"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="Mark starred"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="disabledTintColour">
+                            <color key="value" white="0.0" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="WhV-vE-bMm" appends="YES" id="jck-Kc-o8Q"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ih-fu-CwD" customClass="MoveMessageImageView">
+                    <rect key="frame" x="101" y="205" width="100" height="100"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="CBr-5J-43w"/>
+                        <constraint firstAttribute="width" constant="100" id="aUZ-y0-Cgh"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="mainImage" value="unread48.png"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="Mark unread"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="disabledTintColour">
+                            <color key="value" white="0.0" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="L48-PH-KlP" appends="YES" id="pjG-My-zdC"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zcI-hq-8W9" customClass="MoveMessageImageView">
+                    <rect key="frame" x="101" y="105" width="100" height="100"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="VhH-OR-7My"/>
+                        <constraint firstAttribute="height" constant="100" id="bLB-gV-4FR"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="mainImage" value="trash48.png"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="Move to trash"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="disabledTintColour">
+                            <color key="value" white="0.0" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="Asr-Yt-euz" appends="YES" id="sl5-xH-eL7"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BAC-99-K7Q">
+                    <rect key="frame" x="201" y="105" width="1" height="200"/>
+                    <color key="backgroundColor" white="1" alpha="0.25" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="UXi-bx-hd4"/>
+                        <constraint firstAttribute="width" constant="1" id="rLr-ze-w3E"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vf0-3L-eMh">
+                    <rect key="frame" x="102" y="204" width="300" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="0.25" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="U2T-yZ-D1u"/>
+                        <constraint firstAttribute="width" constant="300" id="iGE-aw-vaU"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jDc-5b-eUO">
+                    <rect key="frame" x="302" y="105" width="1" height="200"/>
+                    <color key="backgroundColor" white="1" alpha="0.25" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="6iG-lx-0RK"/>
+                        <constraint firstAttribute="width" constant="1" id="gXu-Sn-P2K"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qvi-Ia-h7g" customClass="MoveMessageImageView">
+                    <rect key="frame" x="302" y="104" width="100" height="100"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="1HL-n3-NNK"/>
+                        <constraint firstAttribute="height" constant="100" id="yni-7M-2dP"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="mainImage" value="folderPlus48.png"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="Move to..."/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="disabledTintColour">
+                            <color key="value" white="0.0" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="eex-3w-Khx" appends="YES" id="nMv-nc-dVg"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1VI-KY-U7U" customClass="MoveMessageImageView">
+                    <rect key="frame" x="202" y="105" width="100" height="100"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="Pjf-en-kVX"/>
+                        <constraint firstAttribute="width" constant="100" id="Y4e-uB-8bD"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="mainImage" value="spam48.png"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="Move to spam"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="disabledTintColour">
+                            <color key="value" white="0.0" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="Pca-fW-tZc" appends="YES" id="eNq-vD-B8K"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FZ7-4T-eVc" customClass="MoveMessageImageView">
+                    <rect key="frame" x="302" y="205" width="100" height="100"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SPe-cO-PGz" customClass="MoveMessageImageView">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="4Rx-hQ-POv"/>
+                                <constraint firstAttribute="width" constant="100" id="67N-1A-tea"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="disabledTintColour">
+                                    <color key="value" white="0.0" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="image" keyPath="mainImage" value="plus48.png"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="Select more..."/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="W1g-Sz-hOG" appends="YES" id="Veb-wd-uLh"/>
+                            </connections>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="SPe-cO-PGz" firstAttribute="top" secondItem="FZ7-4T-eVc" secondAttribute="top" id="Wc9-jx-TiE"/>
+                        <constraint firstItem="SPe-cO-PGz" firstAttribute="leading" secondItem="FZ7-4T-eVc" secondAttribute="leading" id="lWA-Zk-1dD"/>
+                        <constraint firstAttribute="height" constant="100" id="siP-kQ-Xdv"/>
+                        <constraint firstAttribute="width" constant="100" id="w0w-gc-yHW"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="disabledTintColour">
+                            <color key="value" white="0.0" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="0.5" colorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="8Ba-h7-aZT" secondAttribute="centerY" constant="-50" id="4V1-WA-EME"/>
+                <constraint firstItem="Qvi-Ia-h7g" firstAttribute="leading" secondItem="1VI-KY-U7U" secondAttribute="trailing" id="Cea-UV-XMc"/>
+                <constraint firstItem="jDc-5b-eUO" firstAttribute="leading" secondItem="8Ba-h7-aZT" secondAttribute="trailing" id="DvU-hq-KFK"/>
+                <constraint firstAttribute="centerX" secondItem="8Ba-h7-aZT" secondAttribute="centerX" constant="-1" id="FTn-g9-dc9"/>
+                <constraint firstItem="BAC-99-K7Q" firstAttribute="leading" secondItem="8Ih-fu-CwD" secondAttribute="trailing" id="Jfd-Tz-7g6"/>
+                <constraint firstItem="FZ7-4T-eVc" firstAttribute="top" secondItem="Vf0-3L-eMh" secondAttribute="bottom" id="Mda-6E-kou"/>
+                <constraint firstItem="8Ba-h7-aZT" firstAttribute="leading" secondItem="BAC-99-K7Q" secondAttribute="trailing" id="RwE-ut-LqW"/>
+                <constraint firstItem="8Ih-fu-CwD" firstAttribute="top" secondItem="zcI-hq-8W9" secondAttribute="bottom" id="VSB-3C-a9U"/>
+                <constraint firstItem="Vf0-3L-eMh" firstAttribute="centerX" secondItem="8Ba-h7-aZT" secondAttribute="centerX" id="X8V-UE-e4o"/>
+                <constraint firstItem="jDc-5b-eUO" firstAttribute="leading" secondItem="1VI-KY-U7U" secondAttribute="trailing" id="eTZ-jD-eLj"/>
+                <constraint firstItem="8Ih-fu-CwD" firstAttribute="top" secondItem="Vf0-3L-eMh" secondAttribute="bottom" id="fXm-9Z-fE5"/>
+                <constraint firstItem="BAC-99-K7Q" firstAttribute="leading" secondItem="zcI-hq-8W9" secondAttribute="trailing" id="fh9-rc-0ue"/>
+                <constraint firstAttribute="centerY" secondItem="BAC-99-K7Q" secondAttribute="centerY" id="hrY-Qr-4cN"/>
+                <constraint firstItem="1VI-KY-U7U" firstAttribute="leading" secondItem="BAC-99-K7Q" secondAttribute="trailing" id="iOu-N0-FOA"/>
+                <constraint firstAttribute="centerY" secondItem="8Ih-fu-CwD" secondAttribute="centerY" constant="-50" id="jj3-Sd-Sc3"/>
+                <constraint firstItem="8Ba-h7-aZT" firstAttribute="top" secondItem="1VI-KY-U7U" secondAttribute="bottom" id="pDU-G9-hx4"/>
+                <constraint firstAttribute="centerY" secondItem="jDc-5b-eUO" secondAttribute="centerY" id="shZ-X6-kmQ"/>
+                <constraint firstItem="FZ7-4T-eVc" firstAttribute="leading" secondItem="8Ba-h7-aZT" secondAttribute="trailing" id="slV-d2-2A7"/>
+                <constraint firstItem="Vf0-3L-eMh" firstAttribute="top" secondItem="Qvi-Ia-h7g" secondAttribute="bottom" id="zfR-FW-Z68"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="wzq-Xx-mtw" appends="YES" id="q4Q-VR-r9Y"/>
+            </connections>
+            <point key="canvasLocation" x="780" y="166"/>
+        </view>
+        <tapGestureRecognizer id="Asr-Yt-euz" userLabel="Move to Trash tap">
+            <connections>
+                <action selector="pickedOptionMoveToTrash:" destination="-1" id="3zA-fB-SuL"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="Pca-fW-tZc" userLabel="Move to Spam tap">
+            <connections>
+                <action selector="pickedOptionMoveToSpam:" destination="-1" id="Dk7-wo-6eo"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="W1g-Sz-hOG" userLabel="Select More tap">
+            <connections>
+                <action selector="pickedOptionSelectMore:" destination="-1" id="zZ3-5v-yti"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="L48-PH-KlP" userLabel="Mark unread tap">
+            <connections>
+                <action selector="pickedOptionMarkUnread:" destination="-1" id="PYk-fk-Eq5"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="WhV-vE-bMm" userLabel="Mark starred tap">
+            <connections>
+                <action selector="pickedOptionMarkStarred:" destination="-1" id="reR-fL-muE"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="wzq-Xx-mtw" userLabel="Cancel outside tap">
+            <connections>
+                <action selector="pickedOptionCancel:" destination="-1" id="dzD-dM-OWU"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="eex-3w-Khx" userLabel="Move elsewhere tap">
+            <connections>
+                <action selector="pickedOptionMoveElsewhere:" destination="-1" id="Ot8-cx-yaM"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="dpO-mu-drg" userLabel="Cancel tap">
+            <connections>
+                <action selector="pickedOptionCancel:" destination="-1" id="pRV-zc-Rp4"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="folderPlus48.png" width="64" height="48"/>
+        <image name="plus48.png" width="48" height="48"/>
+        <image name="spam48.png" width="39" height="48"/>
+        <image name="starred48.png" width="50" height="48"/>
+        <image name="trash48.png" width="39" height="48"/>
+        <image name="unread48.png" width="43" height="48"/>
+    </resources>
+</document>

@@ -1,0 +1,159 @@
+
+/* Class = "NSPanel"; title = "Window"; ObjectID = "1"; */
+"1.title" = "Fenêtre";
+
+/* Class = "NSButtonCell"; title = "Close"; ObjectID = "9"; */
+"9.title" = "Fermer";
+
+/* Class = "NSTabViewItem"; label = "Connections"; ObjectID = "10"; */
+"10.label" = "Connexions";
+
+/* Class = "NSTabViewItem"; label = "Accounts"; ObjectID = "13"; */
+"13.label" = "Comptes";
+
+/* Class = "NSTableColumn"; headerCell.title = "Email address"; ObjectID = "32"; */
+"32.headerCell.title" = "Adresse email";
+
+/* Class = "NSTableColumn"; headerCell.title = "Use"; ObjectID = "33"; */
+"33.headerCell.title" = "Utiliser";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "34"; */
+"34.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "35"; */
+"35.title" = "Text Cell";
+
+/* Class = "NSButtonCell"; title = "+"; ObjectID = "107"; */
+"107.title" = "+";
+
+/* Class = "NSButtonCell"; title = "-"; ObjectID = "108"; */
+"108.title" = "-";
+
+/* Class = "NSTableColumn"; headerCell.title = "Key label"; ObjectID = "119"; */
+"119.headerCell.title" = "Clé d'identification la plus récente";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "122"; */
+"122.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "316"; */
+"316.title" = "Table View Cell";
+
+/* Class = "NSTextFieldCell"; title = "Email accounts"; ObjectID = "341"; */
+"341.title" = "Comptes email";
+
+/* Class = "NSTextFieldCell"; title = "This table shows the accounts that are currently set up."; ObjectID = "483"; */
+"483.title" = "Ce tableau montre les comptes qui ont été configurés.";
+
+/* Class = "NSTextFieldCell"; title = "Secure connections have been established with the contacts listed in this table."; ObjectID = "486"; */
+"486.title" = "Des connexions sécurisées ont été établies avec les contacts de cette liste. Les futurs versions de M vont inclure plus d'option et d'information";
+
+/* Class = "NSTextFieldCell"; title = "Connections"; ObjectID = "487"; */
+"487.title" = "Connexions";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "2uA-7s-jOw"; */
+"2uA-7s-jOw.title" = "Table View Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "Date added"; ObjectID = "3KM-xW-TEs"; */
+"3KM-xW-TEs.headerCell.title" = "Date de l'ajoutage";
+
+/* Class = "NSButtonCell"; title = "Restore..."; ObjectID = "3cg-EY-Skw"; */
+"3cg-EY-Skw.title" = "Restaurer...";
+
+/* Class = "NSTextFieldCell"; title = "Footers"; ObjectID = "3rd-qp-owr"; */
+"3rd-qp-owr.title" = "Signature";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "3sl-YI-lr8"; */
+"3sl-YI-lr8.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "6BN-qB-qEC"; */
+"6BN-qB-qEC.title" = "Text Cell";
+
+/* Class = "NSButtonCell"; title = "Delete file"; ObjectID = "7Df-45-m7D"; */
+"7Df-45-m7D.title" = "Supprimer le fichier";
+
+/* Class = "NSTableColumn"; headerCell.title = "Email address"; ObjectID = "8ic-6i-aE2"; */
+"8ic-6i-aE2.headerCell.title" = "Adresse email";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "C9y-NP-097"; */
+"C9y-NP-097.title" = "Table View Cell";
+
+/* Class = "NSButtonCell"; title = "Save key..."; ObjectID = "DFb-rb-EbR"; */
+"DFb-rb-EbR.title" = "Enregistrer la clé...";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "Enb-VM-J18"; */
+"Enb-VM-J18.title" = "Table View Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "FCA-hI-jXT"; */
+"FCA-hI-jXT.title" = "Text Cell";
+
+/* Class = "NSButtonCell"; title = "-"; ObjectID = "Gcr-hb-fIc"; */
+"Gcr-hb-fIc.title" = "-";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "HfI-1y-tTv"; */
+"HfI-1y-tTv.title" = "Table View Cell";
+
+/* Class = "NSButtonCell"; title = "Import from keychain"; ObjectID = "IAj-nI-7OW"; */
+"IAj-nI-7OW.title" = "Import from keychain";
+
+/* Class = "NSTextFieldCell"; title = "iOS link"; ObjectID = "IV8-bE-vh0"; */
+"IV8-bE-vh0.title" = "Sauvegarde de la clé";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "J6C-lJ-uBe"; */
+"J6C-lJ-uBe.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Confidential account data file"; ObjectID = "MNL-i5-W3j"; */
+"MNL-i5-W3j.title" = "Fichier confidentiel de donnée du compte";
+
+/* Class = "NSTextFieldCell"; title = "Use the \"Save key\" button to back up your key to a safe location, like a USB drive. This is important, because the key is required to decode safe messages. To protect your privacy, it is stored only on this computer and remains unknown to us as well as your email provider.\n\nThis means that even we cannot read your messages, but if you lose the key, neither can you. Backing up your key will prevent loss of messages sent both before and after the backup was made. "; ObjectID = "MTX-5f-1mr"; */
+"MTX-5f-1mr.title" = "Utiliser le bouton \"Enregistrer la clé\" pour enregistrer la clé à un endroit sûr comme par exemple, une clé usb.  C'est important car la clé est requise pour déchiffrer un message protégé. Pour protéger votre vie privée, la clé est stockée uniquement sur cet ordinateur et restera inconnue de M ainsi que de votre fournisseur d'email. \n\nCela signifie que si vous perdez la clé, même vous ne pourrez plus lire vos messages. Sauvegarder la clé vous protège de la perte de messages envoyés à la fois avant et après que vous ayez sauvegardé. ";
+
+/* Class = "NSButtonCell"; title = "+"; ObjectID = "Rqz-t0-cpg"; */
+"Rqz-t0-cpg.title" = "+";
+
+/* Class = "NSTabViewItem"; label = "Footers"; ObjectID = "VnT-Th-Dez"; */
+"VnT-Th-Dez.label" = "Signatures";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "Zkc-m1-AOJ"; */
+"Zkc-m1-AOJ.title" = "Table View Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "fmP-zu-HS1"; */
+"fmP-zu-HS1.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "Current"; ObjectID = "iLT-MB-9BE"; */
+"iLT-MB-9BE.headerCell.title" = "Actuel";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "nom-9t-IXV"; */
+"nom-9t-IXV.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "To connect your iOS App with this account open iTunes and select the iOS device. In the \"Apps\" tab scroll down to \"File Sharing\" and select the Mynigma App. Then drag and drop the file created below into the \"Documents\" section."; ObjectID = "oZQ-3d-RK2"; */
+"oZQ-3d-RK2.title" = "Pour connecter votre App iOS avec le compte iTunes actuel et l'appareil de votre choix, aller dans l'onglet \"Apps\" déroulez jusqu'à \"Partage de fichier\" et choisissez M App. Ensuite glissez-déposez le fichier créé dans la section \"Documents\".";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "pu6-zL-Hmg"; */
+"pu6-zL-Hmg.title" = "Table View Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "Account name"; ObjectID = "qES-Mc-uV1"; */
+"qES-Mc-uV1.headerCell.title" = "Nom de compte";
+
+/* Class = "NSTextFieldCell"; title = "A footer is a piece of text Mynigma can attach to the bottom of messages, usually containing contact details. Select a footer in the list below and edit it in the box at the bottom. You can assign footers to accounts in the \"Accounts\" tab."; ObjectID = "uPu-mn-VMy"; */
+"uPu-mn-VMy.title" = "Une signature est un bout de texte que M peut attacher au pied des messages. Il contient en général les informations sur le contact. Choisissez une signature dans la liste ci-dessous et editer le dans la boîte en dessous. Vous pouvez choisir quel pied de page attribuer à quel compte dans l'onglet \"Comptes\".";
+
+/* Class = "NSButtonCell"; title = "Setup assistant"; ObjectID = "vFN-T3-yPw"; */
+"vFN-T3-yPw.title" = "Assistant de configuration";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "vPA-cC-3qT"; */
+"vPA-cC-3qT.title" = "Box";
+
+/* Class = "NSTableColumn"; headerCell.title = "Date anchored"; ObjectID = "wt4-TQ-JKR"; */
+"wt4-TQ-JKR.headerCell.title" = "Date de l'ancrage";
+
+/* Class = "NSTabViewItem"; label = "iOS link"; ObjectID = "xUx-o2-0mA"; */
+"xUx-o2-0mA.label" = "Sauvegarde de la clé";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "xXO-b5-kGD"; */
+"xXO-b5-kGD.title" = "Table View Cell";
+
+/* Class = "NSTextFieldCell"; title = "Key backup"; ObjectID = "y7R-Fe-8Tx"; */
+"y7R-Fe-8Tx.title" = "Sauvegarde de la clé";
+
+/* Class = "NSButtonCell"; title = "Create file"; ObjectID = "yYn-Za-aqG"; */
+"yYn-Za-aqG.title" = "Créer un fichier";

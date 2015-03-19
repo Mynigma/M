@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4934D91E-B724-4315-8322-7F639D0A6C3C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Mynigma</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>689AA82008E9C4782CA556E961D7755D54DEF5F6</key>
+		<string>https://bitbucket.org/Mynigma/mynigma.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Mynigma.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>689AA82008E9C4782CA556E961D7755D54DEF5F6</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/Mynigma/mynigma.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>689AA82008E9C4782CA556E961D7755D54DEF5F6</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>689AA82008E9C4782CA556E961D7755D54DEF5F6</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PGPandSMIME</string>
+		</dict>
+	</array>
+</dict>
+</plist>

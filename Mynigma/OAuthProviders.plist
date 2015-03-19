@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Outlook</key>
+	<dict>
+		<key>redirectURL</key>
+		<string>https://login.live.com/oauth20_desktop.srf</string>
+		<key>tokenURL</key>
+		<string>https://login.live.com/oauth20_token.srf</string>
+		<key>scope</key>
+		<string> wl.imap wl.offline_access</string>
+		<key>authURL</key>
+		<string>https://login.live.com/oauth20_authorize.srf</string>
+		<key>clientID</key>
+		<string>000000004013CC3A</string>
+	</dict>
+	<key>Yahoo</key>
+	<dict>
+		<key>redirectURL</key>
+		<string>https://mynigma.org</string>
+		<key>scope</key>
+		<string></string>
+		<key>URL</key>
+		<string></string>
+		<key>clientID</key>
+		<string></string>
+	</dict>
+	<key>Google</key>
+	<dict>
+		<key>authURL</key>
+		<string>https://accounts.google.com/o/oauth2/auth</string>
+		<key>tokenURL</key>
+		<string>https://accounts.google.com/o/oauth2/token</string>
+		<key>redirectURL</key>
+		<string>urn:ietf:wg:oauth:2.0:oob</string>
+		<key>scope</key>
+		<string>https://mail.google.com/</string>
+		<key>clientID</key>
+		<string>663129018939-97dflc5jlb98d8l9c6960f7b4vk45uik.apps.googleusercontent.com</string>
+	</dict>
+</dict>
+</plist>

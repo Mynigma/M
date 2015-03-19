@@ -1,0 +1,30 @@
+
+/* Class = "IBUILabel"; text = "----"; ObjectID = "5fr-Mv-cV0"; */
+"5fr-Mv-cV0.text" = "----";
+
+/* Class = "IBUILabel"; text = "Please verify code"; ObjectID = "HZO-2B-Ta8"; */
+"HZO-2B-Ta8.text" = "Please verify code";
+
+/* Class = "IBUILabel"; text = "The device you are syncing with will also show a code. Do they match?"; ObjectID = "Hpy-kr-UqT"; */
+"Hpy-kr-UqT.text" = "The device you are syncing with will also show a code. Do they match?";
+
+/* Class = "IBUILabel"; text = "Unpaired"; ObjectID = "I5u-yX-yrN"; */
+"I5u-yX-yrN.text" = "Unpaired";
+
+/* Class = "IBUILabel"; text = "Roman's MacBook Pro"; ObjectID = "Mgp-Cj-vPf"; */
+"Mgp-Cj-vPf.text" = "Roman's MacBook Pro";
+
+/* Class = "IBUILabel"; text = "----"; ObjectID = "P3r-0w-mHJ"; */
+"P3r-0w-mHJ.text" = "----";
+
+/* Class = "IBUIButton"; normalTitle = "Pair with this device"; ObjectID = "bCn-Tm-AdC"; */
+"bCn-Tm-AdC.normalTitle" = "Pair with this device";
+
+/* Class = "IBUILabel"; text = "----"; ObjectID = "ndp-mR-Xds"; */
+"ndp-mR-Xds.text" = "----";
+
+/* Class = "IBUIButton"; normalTitle = "No"; ObjectID = "wZW-RV-Y1X"; */
+"wZW-RV-Y1X.normalTitle" = "Non";
+
+/* Class = "IBUIButton"; normalTitle = "Yes"; ObjectID = "xfj-DH-yyo"; */
+"xfj-DH-yyo.normalTitle" = "Oui";

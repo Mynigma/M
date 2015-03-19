@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>M (Mac App Store).xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>M (iOS App Store).xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>M Infinity (Mac).xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>StandardUIElements.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>1E288DAA18F3F87B0068D1B2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1E4B5B2E17B6747000F2A19C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1E4F78A119E585C100E4DC97</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1E7C7A4E19C3A27F001BF880</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1E7C7A5819C3A27F001BF880</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1EF4684F1A28DCBA008CA9B2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1EF6C9DD18F4ADDC006370EC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1EF92DDD17EC673100FC4F6A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1EF92E0717EC673100FC4F6A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

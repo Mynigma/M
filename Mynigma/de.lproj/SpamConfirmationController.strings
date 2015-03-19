@@ -1,0 +1,24 @@
+
+/* Class = "NSWindow"; title = "Message marked as spam"; ObjectID = "1"; */
+"1.title" = "Nachricht ist als Spam markiert";
+
+/* Class = "NSButtonCell"; title = "OK"; ObjectID = "6"; */
+"6.title" = "OK";
+
+/* Class = "NSButtonCell"; title = "Spam settings"; ObjectID = "10"; */
+"10.title" = "Spam-Einstellungen";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "12"; */
+"12.title" = "Abbrechen";
+
+/* Class = "NSTextFieldCell"; title = "This message was sent through your secure connection with"; ObjectID = "16"; */
+"16.title" = "Gesendet wurde diese Nachricht mit einer sicheren Verbindung durch";
+
+/* Class = "NSButtonCell"; title = "Establish a fresh connection with Wilhelm Schüttelspeer"; ObjectID = "18"; */
+"18.title" = "Eine neue Verbindung mit Wilhelm Schüttelspeer herstellen";
+
+/* Class = "NSTextFieldCell"; title = "Wilhelm Schüttelspeer (wilhelm.schuettelspeer@gmail.com)"; ObjectID = "22"; */
+"22.title" = "Wilhelm Schüttelspeer (wilhelm.schuettelspeer@gmail.com)";
+
+/* Class = "NSButtonCell"; title = "Break off connection to prevent further spam"; ObjectID = "26"; */
+"26.title" = "Verbindung Abbrechen um weiteren Spam zu vermeiden";

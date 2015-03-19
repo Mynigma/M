@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6249" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MynTokenFieldController">
+            <connections>
+                <outlet property="tableView" destination="apD-nt-5fg" id="PMl-dB-7fj"/>
+                <outlet property="tokenField" destination="ff7-o7-4PI" id="oWH-vl-0RI"/>
+                <outlet property="tokenFieldView" destination="dTi-Lq-uPw" id="Nnj-a3-urM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="381" id="i5M-Pr-FkT" customClass="MynTokenField">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="381"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="apD-nt-5fg" userLabel="Results Table View">
+                    <rect key="frame" x="0.0" y="41" width="320" height="220"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="220" id="ixf-GU-qD6"/>
+                    </constraints>
+                    <color key="separatorColor" red="0.96199041600000001" green="0.96196162699999999" blue="0.96197795870000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="dTi-Lq-uPw" id="0if-Nl-etA"/>
+                        <outlet property="delegate" destination="dTi-Lq-uPw" id="fQB-Ns-uwj"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EcF-lI-mW6" userLabel="Separator">
+                    <rect key="frame" x="0.0" y="40" width="320" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="pZ3-9d-cuv"/>
+                    </constraints>
+                </view>
+                <scrollView contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTi-Lq-uPw" customClass="TITokenFieldView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ff7-o7-4PI" customClass="TITokenField">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="tintColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
+                            <gestureRecognizers/>
+                            <color key="textColor" red="0.1176470593" green="0.26666668059999998" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                            <connections>
+                                <outlet property="delegate" destination="dTi-Lq-uPw" id="bWw-0V-yKc"/>
+                                <outlet property="tokenFieldHeightConstraint" destination="LSp-j0-KDU" id="Mtk-4d-2QV"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                    <color key="tintColor" red="0.14901961389999999" green="0.34509804840000002" blue="0.57647061349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ff7-o7-4PI" secondAttribute="trailing" id="1WG-Ec-b2A"/>
+                        <constraint firstItem="ff7-o7-4PI" firstAttribute="leading" secondItem="dTi-Lq-uPw" secondAttribute="leading" id="1bx-io-dVh"/>
+                        <constraint firstAttribute="bottom" secondItem="ff7-o7-4PI" secondAttribute="bottom" id="7vl-1D-isX"/>
+                        <constraint firstAttribute="height" secondItem="ff7-o7-4PI" secondAttribute="height" id="8Yg-mm-jeO"/>
+                        <constraint firstAttribute="height" constant="40" id="LSp-j0-KDU"/>
+                        <constraint firstAttribute="width" secondItem="ff7-o7-4PI" secondAttribute="width" id="ec7-hP-oXP"/>
+                        <constraint firstItem="ff7-o7-4PI" firstAttribute="top" secondItem="dTi-Lq-uPw" secondAttribute="top" id="q8i-df-dG5"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="resultsTable" destination="apD-nt-5fg" id="hfe-cH-R4r"/>
+                        <outlet property="separator" destination="EcF-lI-mW6" id="3jd-uw-4gX"/>
+                        <outlet property="tableViewHeightConstraint" destination="ixf-GU-qD6" id="gCn-yy-IPC"/>
+                        <outlet property="tokenField" destination="ff7-o7-4PI" id="oN7-Mk-918"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="0.97947080289999999" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dTi-Lq-uPw" firstAttribute="trailing" secondItem="EcF-lI-mW6" secondAttribute="trailing" id="655-CM-zcX"/>
+                <constraint firstItem="dTi-Lq-uPw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7HV-8x-bea"/>
+                <constraint firstAttribute="trailing" secondItem="dTi-Lq-uPw" secondAttribute="trailing" id="JHd-Gy-aEk"/>
+                <constraint firstAttribute="trailing" secondItem="apD-nt-5fg" secondAttribute="trailing" id="Nqk-ML-wdN"/>
+                <constraint firstItem="apD-nt-5fg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Uae-CV-lfq"/>
+                <constraint firstItem="apD-nt-5fg" firstAttribute="top" secondItem="EcF-lI-mW6" secondAttribute="bottom" id="Zc7-dE-0cF"/>
+                <constraint firstItem="dTi-Lq-uPw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cF4-gA-tfw"/>
+                <constraint firstItem="dTi-Lq-uPw" firstAttribute="leading" secondItem="EcF-lI-mW6" secondAttribute="leading" id="djt-Hx-6Tg"/>
+                <constraint firstItem="EcF-lI-mW6" firstAttribute="top" secondItem="dTi-Lq-uPw" secondAttribute="bottom" id="hPq-81-Fbh"/>
+                <constraint firstAttribute="bottom" secondItem="apD-nt-5fg" secondAttribute="bottom" priority="250" id="lmb-5O-3z0"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

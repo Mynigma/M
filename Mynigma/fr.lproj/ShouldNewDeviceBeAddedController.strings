@@ -1,0 +1,30 @@
+
+/* Class = "NSWindow"; title = "Window"; ObjectID = "1"; */
+"1.title" = "Window";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "5"; */
+"5.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "Roman Priebe's iPhone"; ObjectID = "36"; */
+"36.title" = "Roman Priebe's iPhone";
+
+/* Class = "NSTextFieldCell"; title = "iPhone 4S"; ObjectID = "43"; */
+"43.title" = "iPhone 4S";
+
+/* Class = "NSTextFieldCell"; title = "05-03-2013 08:40"; ObjectID = "51"; */
+"51.title" = "05-03-2013 08:40";
+
+/* Class = "NSButtonCell"; title = "Accept"; ObjectID = "63"; */
+"63.title" = "Accept";
+
+/* Class = "NSButtonCell"; title = "Reject"; ObjectID = "72"; */
+"72.title" = "Reject";
+
+/* Class = "NSTextFieldCell"; title = "This device wants to access your safe messages."; ObjectID = "74"; */
+"74.title" = "This device wants to access your safe messages.";
+
+/* Class = "NSTextFieldCell"; title = "If you did not send this request someone else has obtained the password to your email account. Click \"Reject\" and your safe messages will remain protected. In this case you should, however, change your password."; ObjectID = "76"; */
+"76.title" = "If you did not send this request someone else has obtained the password to your email account. Click \"Reject\" and your safe messages will remain protected. In this case you should, however, change your password.";
+
+/* Class = "NSTextFieldCell"; title = "Access request"; ObjectID = "78"; */
+"78.title" = "Access request";

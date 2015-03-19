@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6249" systemVersion="13F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6249"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="DeviceInfoController">
+            <connections>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="alertPanel" id="F0z-JX-Cv5" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="532" height="220"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="532" height="220"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vRw-0a-Sjd">
+                        <rect key="frame" x="20" y="19" width="120" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="Se1-c8-J0y"/>
+                            <constraint firstAttribute="width" constant="120" id="YxV-mR-dtG"/>
+                        </constraints>
+                        <buttonCell key="cell" type="smallSquare" title="Back" bezelStyle="smallSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Yuz-Tj-Soq">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cancel:" target="-2" id="bWC-AQ-OGf"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZXN-3G-oPc">
+                        <rect key="frame" x="159" y="99" width="66" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="iPhone 5S" id="t60-en-2mH">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="self.deviceName" id="V0y-DN-pfy"/>
+                        </connections>
+                    </textField>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GYd-di-pwF">
+                        <rect key="frame" x="362" y="19" width="150" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="CnQ-m3-bkt"/>
+                            <constraint firstAttribute="width" constant="150" id="yy6-A0-fVg"/>
+                        </constraints>
+                        <buttonCell key="cell" type="smallSquare" title="Trust this device" bezelStyle="smallSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1Tv-mh-6Sk">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="startTrustEstablishment:" target="-2" id="bDU-F3-uuQ"/>
+                        </connections>
+                    </button>
+                    <box autoresizesSubviews="NO" title="Box" boxType="custom" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="I5z-Cu-FGJ">
+                        <rect key="frame" x="20" y="72" width="128" height="128"/>
+                        <view key="contentView">
+                            <rect key="frame" x="1" y="1" width="126" height="126"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8bF-D5-Exx">
+                                    <rect key="frame" x="-1" y="-1" width="128" height="128"/>
+                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="iPhone_4S_small" id="Mtc-Uy-n5t"/>
+                                    <connections>
+                                        <binding destination="-2" name="value" keyPath="self.deviceImage" id="k9w-Ig-HXA"/>
+                                    </connections>
+                                </imageView>
+                            </subviews>
+                        </view>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="128" id="6K9-d3-7aT"/>
+                            <constraint firstItem="8bF-D5-Exx" firstAttribute="top" secondItem="I5z-Cu-FGJ" secondAttribute="top" id="DPI-Cl-cKs"/>
+                            <constraint firstItem="8bF-D5-Exx" firstAttribute="leading" secondItem="I5z-Cu-FGJ" secondAttribute="leading" id="OHV-tF-FxN"/>
+                            <constraint firstAttribute="trailing" secondItem="8bF-D5-Exx" secondAttribute="trailing" id="T9F-w3-mbP"/>
+                            <constraint firstAttribute="height" constant="128" id="Y5s-8i-iXe"/>
+                            <constraint firstAttribute="bottom" secondItem="8bF-D5-Exx" secondAttribute="bottom" id="dO1-oh-ebf"/>
+                        </constraints>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </box>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iRa-QU-aae">
+                        <rect key="frame" x="159" y="136" width="319" height="34"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Your confidential data will be synced with trusted devices. Never trust a device you do not own." id="80R-VL-ijR">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZXN-3G-oPc" firstAttribute="leading" secondItem="I5z-Cu-FGJ" secondAttribute="trailing" constant="13" id="20f-4i-Jax"/>
+                    <constraint firstAttribute="bottom" secondItem="GYd-di-pwF" secondAttribute="bottom" constant="20" id="CrM-Gj-Ew8"/>
+                    <constraint firstItem="I5z-Cu-FGJ" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="HFF-pb-kfZ"/>
+                    <constraint firstItem="vRw-0a-Sjd" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="Ips-oR-l0L"/>
+                    <constraint firstAttribute="trailing" secondItem="GYd-di-pwF" secondAttribute="trailing" constant="20" id="Lqh-w3-TpW"/>
+                    <constraint firstItem="vRw-0a-Sjd" firstAttribute="top" secondItem="I5z-Cu-FGJ" secondAttribute="bottom" constant="20" id="PFh-FD-RDp"/>
+                    <constraint firstItem="ZXN-3G-oPc" firstAttribute="top" secondItem="iRa-QU-aae" secondAttribute="bottom" constant="20" id="Qhh-iJ-v4m"/>
+                    <constraint firstItem="iRa-QU-aae" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="50" id="Rd0-J1-5Jm"/>
+                    <constraint firstAttribute="bottom" secondItem="vRw-0a-Sjd" secondAttribute="bottom" constant="20" id="fkY-Fc-7jf"/>
+                    <constraint firstItem="I5z-Cu-FGJ" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="20" id="vwA-mk-K2C"/>
+                    <constraint firstItem="iRa-QU-aae" firstAttribute="leading" secondItem="I5z-Cu-FGJ" secondAttribute="trailing" constant="13" id="w6p-hJ-qge"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+        </window>
+        <userDefaultsController representsSharedInstance="YES" id="pKK-2V-ETA"/>
+    </objects>
+    <resources>
+        <image name="iPhone_4S_small" width="23.760000228881836" height="42.240001678466797"/>
+    </resources>
+</document>

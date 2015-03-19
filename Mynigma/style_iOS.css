@@ -1,0 +1,30 @@
+/* the latest quote */
+[type=cite] {
+  border-left: 3px solid #ccc;
+  margin: 0.5em 5px;
+  padding:0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+/* gmail_quotes */
+blockquote.gmail_quote {
+  border-left: 3px solid #ccc;
+  margin: 0.5em 5px;
+  padding:0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+/* other quotes */
+blockquote {
+  border-left: 3px solid #ccc;
+  margin: 0.5em 5px;
+  padding:0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+body {
+font-family: "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+font-size: 17px;
+}
+
+@viewport { 
+    width: device-width;
+}

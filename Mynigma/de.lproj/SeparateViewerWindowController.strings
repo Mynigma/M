@@ -1,0 +1,81 @@
+
+/* Class = "NSWindow"; title = "Window"; ObjectID = "1"; */
+"1.title" = "Window";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "7"; */
+"7.title" = "Box";
+
+/* Class = "NSButton"; ibShadowedToolTip = "forward"; ObjectID = "8"; */
+"8.ibShadowedToolTip" = "Weiterleiten";
+
+/* Class = "NSButton"; ibShadowedToolTip = "reply to all"; ObjectID = "9"; */
+"9.ibShadowedToolTip" = "Allen antworten";
+
+/* Class = "NSButton"; ibShadowedToolTip = "reply"; ObjectID = "10"; */
+"10.ibShadowedToolTip" = "Antworten";
+
+/* Class = "NSTextFieldCell"; title = "01/03/2013 10:12"; ObjectID = "60"; */
+"60.title" = "01/03/2013 10:12";
+
+/* Class = "NSTextFieldCell"; title = "Bcc:"; ObjectID = "70"; */
+"70.title" = "Bcc:";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "292"; */
+"292.title" = "Box";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "309"; */
+"309.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "To:"; ObjectID = "316"; */
+"316.title" = "An:";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "324"; */
+"324.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "Subject:"; ObjectID = "329"; */
+"329.title" = "Betreff:";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "335"; */
+"335.title" = "Box";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "704"; */
+"704.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "From:"; ObjectID = "707"; */
+"707.title" = "Von:";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "710"; */
+"710.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "Reply to:"; ObjectID = "713"; */
+"713.title" = "Antwort an:";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "716"; */
+"716.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "Cc:"; ObjectID = "719"; */
+"719.title" = "Cc:";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "6Vb-5B-Rxx"; */
+"6Vb-5B-Rxx.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "9ZU-ez-xI3"; */
+"9ZU-ez-xI3.title" = "Label";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "FB1-mS-IH9"; */
+"FB1-mS-IH9.title" = "Box";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "O7g-tD-dDc"; */
+"O7g-tD-dDc.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "OGy-j0-gUo"; */
+"OGy-j0-gUo.title" = "Label";
+
+/* Class = "NSTextFieldCell"; title = "Safe"; ObjectID = "PF1-Sq-JF3"; */
+"PF1-Sq-JF3.title" = "Sicher";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "RYm-zK-M3F"; */
+"RYm-zK-M3F.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "Not yet downloaded"; ObjectID = "Vy3-bc-8bo"; */
+"Vy3-bc-8bo.title" = "Noch nicht geladen";

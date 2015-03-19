@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1080" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TemplateNameController">
+            <connections>
+                <outlet property="textField" destination="fmH-lG-rSz" id="nhK-vZ-d3e"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="alertPanel" id="F0z-JX-Cv5" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" utility="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="480" height="124"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="124"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lAI-lv-beC">
+                        <rect key="frame" x="18" y="87" width="328" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="What would you like the new template to be called?" id="NAV-BB-8cM">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fmH-lG-rSz">
+                        <rect key="frame" x="20" y="53" width="440" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="440" id="CTP-Up-toZ"/>
+                        </constraints>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Kqh-Gs-yJZ">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8XD-MY-6BV">
+                        <rect key="frame" x="407" y="13" width="59" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="vje-Dg-cMz">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="OKButtonPressed:" target="-2" id="YJG-ii-mMD"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GOm-ee-5H7">
+                        <rect key="frame" x="14" y="13" width="82" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Toa-El-L9R">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cancelButtonPressed:" target="-2" id="dzL-VQ-TeS"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lAI-lv-beC" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="2Wk-fy-zG2"/>
+                    <constraint firstAttribute="bottom" secondItem="GOm-ee-5H7" secondAttribute="bottom" constant="20" id="3A2-IV-Xjy"/>
+                    <constraint firstItem="fmH-lG-rSz" firstAttribute="top" secondItem="lAI-lv-beC" secondAttribute="bottom" constant="12" id="475-l6-rCB"/>
+                    <constraint firstItem="GOm-ee-5H7" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="Xko-p1-nIB"/>
+                    <constraint firstAttribute="trailing" secondItem="fmH-lG-rSz" secondAttribute="trailing" constant="20" id="Xyo-4S-GzC"/>
+                    <constraint firstItem="fmH-lG-rSz" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="YmR-Rb-Id9"/>
+                    <constraint firstItem="GOm-ee-5H7" firstAttribute="top" secondItem="fmH-lG-rSz" secondAttribute="bottom" constant="12" id="g7J-Wc-h9E"/>
+                    <constraint firstItem="lAI-lv-beC" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="20" id="pFL-8l-g1p"/>
+                    <constraint firstItem="GOm-ee-5H7" firstAttribute="centerY" secondItem="8XD-MY-6BV" secondAttribute="centerY" id="sL7-li-hnk"/>
+                    <constraint firstAttribute="trailing" secondItem="8XD-MY-6BV" secondAttribute="trailing" constant="20" id="vnI-lx-aG0"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+        </window>
+    </objects>
+</document>

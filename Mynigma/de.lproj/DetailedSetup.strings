@@ -1,0 +1,180 @@
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "0sV-r6-5th"; */
+"0sV-r6-5th.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "Incoming (IMAP)"; ObjectID = "22e-tQ-Jgm"; */
+"22e-tQ-Jgm.title" = "Eingehend (IMAP)";
+
+/* Class = "NSTextFieldCell"; title = "Security & ports"; ObjectID = "43R-sE-z6B"; */
+"43R-sE-z6B.title" = "Sicherheit & Ports";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "4Z3-Sf-D0L"; */
+"4Z3-Sf-D0L.title" = "Box";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "6c9-6q-h8i"; */
+"6c9-6q-h8i.title" = "Box";
+
+/* Class = "IBBindingConnection"; ibShadowedIsNilPlaceholder = "user name"; ObjectID = "74d-dp-Df1"; */
+"74d-dp-Df1.ibShadowedIsNilPlaceholder" = "Benutzername";
+
+/* Class = "IBBindingConnection"; ibShadowedIsNilPlaceholder = "incoming server hostname"; ObjectID = "7HK-nW-9yt"; */
+"7HK-nW-9yt.ibShadowedIsNilPlaceholder" = "Name des Eingangsservers";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "7aX-JF-Hoq"; */
+"7aX-JF-Hoq.title" = "Item 1";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "8AA-EO-rbU"; */
+"8AA-EO-rbU.title" = "Box";
+
+/* Class = "NSComboBoxCell"; 8dJ-4z-uCC.ibShadowedObjectValues[0] = "465"; ObjectID = "8dJ-4z-uCC"; */
+"8dJ-4z-uCC.ibShadowedObjectValues[0]" = "465";
+
+/* Class = "NSComboBoxCell"; 8dJ-4z-uCC.ibShadowedObjectValues[1] = "587"; ObjectID = "8dJ-4z-uCC"; */
+"8dJ-4z-uCC.ibShadowedObjectValues[1]" = "587";
+
+/* Class = "NSComboBoxCell"; 8dJ-4z-uCC.ibShadowedObjectValues[2] = "25"; ObjectID = "8dJ-4z-uCC"; */
+"8dJ-4z-uCC.ibShadowedObjectValues[2]" = "25";
+
+/* Class = "NSTextFieldCell"; title = "IMAP server"; ObjectID = "AyQ-b3-ugm"; */
+"AyQ-b3-ugm.title" = "IMAP-Server";
+
+/* Class = "NSButtonCell"; title = "detect"; ObjectID = "BXH-ff-H2y"; */
+"BXH-ff-H2y.title" = "erkennen";
+
+/* Class = "NSComboBoxCell"; F36-TK-7eq.ibShadowedObjectValues[0] = "993"; ObjectID = "F36-TK-7eq"; */
+"F36-TK-7eq.ibShadowedObjectValues[0]" = "993";
+
+/* Class = "NSComboBoxCell"; F36-TK-7eq.ibShadowedObjectValues[1] = "143"; ObjectID = "F36-TK-7eq"; */
+"F36-TK-7eq.ibShadowedObjectValues[1]" = "143";
+
+/* Class = "NSButtonCell"; title = "detect"; ObjectID = "FtV-bT-s0I"; */
+"FtV-bT-s0I.title" = "erkennen";
+
+/* Class = "NSTextFieldCell"; title = "Incoming encryption"; ObjectID = "FyI-a3-sgP"; */
+"FyI-a3-sgP.title" = "Eingangssicherheit";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "GuM-RL-ens"; */
+"GuM-RL-ens.title" = "Box";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "INc-fw-RDu"; */
+"INc-fw-RDu.title" = "Item 3";
+
+/* Class = "IBBindingConnection"; ibShadowedIsNilPlaceholder = "password"; ObjectID = "J4H-vM-8xK"; */
+"J4H-vM-8xK.ibShadowedIsNilPlaceholder" = "Passwort";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "Ldj-tB-Dtd"; */
+"Ldj-tB-Dtd.title" = "Item 2";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "MNQ-RP-Zhy"; */
+"MNQ-RP-Zhy.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "Server hostnames"; ObjectID = "Nct-T6-YhU"; */
+"Nct-T6-YhU.title" = "Servernamen";
+
+/* Class = "NSSegmentedCell"; Qip-be-LfO.ibShadowedLabels[0] = "SSL"; ObjectID = "Qip-be-LfO"; */
+"Qip-be-LfO.ibShadowedLabels[0]" = "SSL";
+
+/* Class = "NSSegmentedCell"; Qip-be-LfO.ibShadowedLabels[1] = "StartTLS"; ObjectID = "Qip-be-LfO"; */
+"Qip-be-LfO.ibShadowedLabels[1]" = "StartTLS";
+
+/* Class = "NSSegmentedCell"; Qip-be-LfO.ibShadowedLabels[2] = "None"; ObjectID = "Qip-be-LfO"; */
+"Qip-be-LfO.ibShadowedLabels[2]" = "Keine";
+
+/* Class = "NSTextFieldCell"; title = "Incoming port"; ObjectID = "RAq-Gp-9h1"; */
+"RAq-Gp-9h1.title" = "Eingangs-Port";
+
+/* Class = "NSSecureTextFieldCell"; placeholderString = "password"; ObjectID = "RSU-iJ-7cD"; */
+"RSU-iJ-7cD.placeholderString" = "Passwort";
+
+/* Class = "NSSecureTextFieldCell"; placeholderString = "password"; ObjectID = "SgS-du-Rdi"; */
+"SgS-du-Rdi.placeholderString" = "Passwort";
+
+/* Class = "NSTextFieldCell"; placeholderString = "user name"; ObjectID = "TAd-UF-2ur"; */
+"TAd-UF-2ur.placeholderString" = "Benutzername";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "TFt-Yh-u1Y"; */
+"TFt-Yh-u1Y.title" = "Box";
+
+/* Class = "IBBindingConnection"; ibShadowedIsNilPlaceholder = "password"; ObjectID = "UYe-96-qpd"; */
+"UYe-96-qpd.ibShadowedIsNilPlaceholder" = "Passwort";
+
+/* Class = "IBBindingConnection"; ibShadowedIsNilPlaceholder = "user name"; ObjectID = "VLB-Rn-iqV"; */
+"VLB-Rn-iqV.ibShadowedIsNilPlaceholder" = "Benutzername";
+
+/* Class = "NSTextFieldCell"; title = "Outgoing encryption"; ObjectID = "Ve9-uJ-0R4"; */
+"Ve9-uJ-0R4.title" = "Ausgangssicherheit";
+
+/* Class = "IBBindingConnection"; ibShadowedIsNilPlaceholder = "email address"; ObjectID = "VgY-8K-Dwm"; */
+"VgY-8K-Dwm.ibShadowedIsNilPlaceholder" = "E-Mail-Adresse";
+
+/* Class = "NSTextFieldCell"; title = "Outgoing (SMTP)"; ObjectID = "ZFl-G0-P3F"; */
+"ZFl-G0-P3F.title" = "Ausgehend (SMTP)";
+
+/* Class = "IBBindingConnection"; ibShadowedIsNilPlaceholder = "password"; ObjectID = "d83-hr-pOn"; */
+"d83-hr-pOn.ibShadowedIsNilPlaceholder" = "Passwort";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "gRY-Pr-qcb"; */
+"gRY-Pr-qcb.title" = "Box";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "gqq-tb-kYQ"; */
+"gqq-tb-kYQ.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "jA6-SM-1Md"; */
+"jA6-SM-1Md.title" = "Item 1";
+
+/* Class = "NSTextFieldCell"; title = "SMTP server"; ObjectID = "jTy-4l-xKj"; */
+"jTy-4l-xKj.title" = "SMTP-Server";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Email address"; ObjectID = "jm5-Qq-QTV"; */
+"jm5-Qq-QTV.placeholderString" = "E-Mail-Adresse";
+
+/* Class = "NSTextFieldCell"; title = "email.address@example.com"; ObjectID = "jm5-Qq-QTV"; */
+"jm5-Qq-QTV.title" = "email.adresse@beispiel.de";
+
+/* Class = "NSSegmentedCell"; kQj-Al-Rc6.ibShadowedLabels[0] = "SSL"; ObjectID = "kQj-Al-Rc6"; */
+"kQj-Al-Rc6.ibShadowedLabels[0]" = "SSL";
+
+/* Class = "NSSegmentedCell"; kQj-Al-Rc6.ibShadowedLabels[1] = "StartTLS"; ObjectID = "kQj-Al-Rc6"; */
+"kQj-Al-Rc6.ibShadowedLabels[1]" = "StartTLS";
+
+/* Class = "NSSegmentedCell"; kQj-Al-Rc6.ibShadowedLabels[2] = "None"; ObjectID = "kQj-Al-Rc6"; */
+"kQj-Al-Rc6.ibShadowedLabels[2]" = "Keine";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "lDK-0n-Ibm"; */
+"lDK-0n-Ibm.title" = "Box";
+
+/* Class = "IBBindingConnection"; ibShadowedIsNilPlaceholder = "outgoing server hostname"; ObjectID = "lvF-Wg-dtU"; */
+"lvF-Wg-dtU.ibShadowedIsNilPlaceholder" = "Name des Ausgangsservers";
+
+/* Class = "NSTextFieldCell"; placeholderString = "IMAP server hostname"; ObjectID = "o2I-bc-qgu"; */
+"o2I-bc-qgu.placeholderString" = "IMAP-Servername";
+
+/* Class = "NSTextFieldCell"; title = "imap.mail.com"; ObjectID = "o2I-bc-qgu"; */
+"o2I-bc-qgu.title" = "imap.email.de";
+
+/* Class = "NSTextFieldCell"; title = "Credentials"; ObjectID = "phP-M5-p9h"; */
+"phP-M5-p9h.title" = "Anmeldedaten";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "qIV-h6-OnC"; */
+"qIV-h6-OnC.title" = "Box";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "tUB-1u-l4y"; */
+"tUB-1u-l4y.title" = "Item 2";
+
+/* Class = "NSButtonCell"; title = "Button"; ObjectID = "usa-PJ-Bl8"; */
+"usa-PJ-Bl8.title" = "Button";
+
+/* Class = "NSSecureTextFieldCell"; placeholderString = "password"; ObjectID = "w7n-1d-uyK"; */
+"w7n-1d-uyK.placeholderString" = "Passwort";
+
+/* Class = "NSTextFieldCell"; placeholderString = "SMTP server hostname"; ObjectID = "wBC-PM-gpc"; */
+"wBC-PM-gpc.placeholderString" = "SMTP-Servername";
+
+/* Class = "NSTextFieldCell"; title = "smtp.mail.com"; ObjectID = "wBC-PM-gpc"; */
+"wBC-PM-gpc.title" = "smtp.email.de";
+
+/* Class = "NSTextFieldCell"; placeholderString = "user name"; ObjectID = "ymi-Ei-7cH"; */
+"ymi-Ei-7cH.placeholderString" = "Benutzername";
+
+/* Class = "NSTextFieldCell"; title = "Outgoing port"; ObjectID = "ztb-3X-xU6"; */
+"ztb-3X-xU6.title" = "Ausgangs-Port";

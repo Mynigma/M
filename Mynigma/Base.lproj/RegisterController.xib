@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13B3116" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1090" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="RegisterController">
+            <connections>
+                <outlet property="accountSecuredBox" destination="6ie-aF-P2Q" id="ux5-pe-Khq"/>
+                <outlet property="accountSecuredField" destination="YDs-WM-HbD" id="0Gt-V4-m5X"/>
+                <outlet property="activityBar" destination="YDs-WM-HbD" id="dJP-Ja-kNf"/>
+                <outlet property="activityProgressBar" destination="1AB-2p-hZ8" id="eat-3G-CL5"/>
+                <outlet property="continueButton" destination="rqM-lv-yJ0" id="XcU-pj-b8n"/>
+                <outlet property="feedbackLabel" destination="qjw-p4-SH7" id="7gk-RP-vjD"/>
+                <outlet property="saveBackupButton" destination="ftM-aR-a8B" id="ZuB-Nk-uzc"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="alertPanel" id="F0z-JX-Cv5" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" documentModal="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="480" height="307"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="307"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <progressIndicator fixedFrame="YES" maxValue="100" indeterminate="YES" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="1AB-2p-hZ8">
+                        <rect key="frame" x="20" y="268" width="440" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </progressIndicator>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qjw-p4-SH7">
+                        <rect key="frame" x="18" y="237" width="444" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Securing your account..." id="0tu-uJ-T6j">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="ftM-aR-a8B">
+                        <rect key="frame" x="14" y="13" width="115" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Back up key" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="YY4-Kp-D8a">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rqM-lv-yJ0">
+                        <rect key="frame" x="368" y="13" width="98" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Continue" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" sound="DingLing" inset="2" id="J6k-K4-OgX">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                        </buttonCell>
+                    </button>
+                    <box autoresizesSubviews="NO" title="Box" boxType="custom" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="6ie-aF-P2Q">
+                        <rect key="frame" x="20" y="229" width="440" height="58"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <view key="contentView">
+                            <rect key="frame" x="1" y="1" width="438" height="56"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YDs-WM-HbD">
+                                    <rect key="frame" x="56" y="10" width="369" height="36"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Account secured ✔︎" id="U8i-RE-LEv">
+                                        <font key="font" metaFont="system" size="30"/>
+                                        <color key="textColor" cyan="0.8331717609489051" magenta="0.17877509124087593" yellow="0.76388572080291972" black="0.14350479014598541" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <box autoresizesSubviews="NO" title="Box" boxType="custom" borderType="none" translatesAutoresizingMaskIntoConstraints="NO" id="Ri4-Sd-nga">
+                                    <rect key="frame" x="-1" y="-1" width="40" height="58"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <view key="contentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <imageView translatesAutoresizingMaskIntoConstraints="NO" id="h7e-Q1-Fto">
+                                                <rect key="frame" x="8" y="17" width="24" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="24" id="5oR-Wl-vDB"/>
+                                                    <constraint firstAttribute="height" constant="24" id="7AR-fe-v24"/>
+                                                </constraints>
+                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="secureLock32" id="hk7-XV-yFI"/>
+                                            </imageView>
+                                        </subviews>
+                                    </view>
+                                    <constraints>
+                                        <constraint firstAttribute="centerX" secondItem="h7e-Q1-Fto" secondAttribute="centerX" id="ISs-t7-owF"/>
+                                        <constraint firstAttribute="width" constant="40" id="Uy0-qs-tcd"/>
+                                        <constraint firstAttribute="centerY" secondItem="h7e-Q1-Fto" secondAttribute="centerY" id="kZd-KE-NIN"/>
+                                    </constraints>
+                                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                                    <color key="fillColor" red="0.84272295239999995" green="0.95060604810000005" blue="0.83264136310000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </box>
+                            </subviews>
+                        </view>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="58" id="43z-dW-CBd"/>
+                            <constraint firstAttribute="bottom" secondItem="Ri4-Sd-nga" secondAttribute="bottom" id="Deh-GD-s1F"/>
+                            <constraint firstItem="Ri4-Sd-nga" firstAttribute="leading" secondItem="6ie-aF-P2Q" secondAttribute="leading" id="Ydr-ke-Qtc"/>
+                            <constraint firstItem="Ri4-Sd-nga" firstAttribute="top" secondItem="6ie-aF-P2Q" secondAttribute="top" id="lZK-cb-yQ0"/>
+                        </constraints>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" white="1" alpha="0.75" colorSpace="calibratedWhite"/>
+                    </box>
+                    <box autoresizesSubviews="NO" title="Box" boxType="custom" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="F6Q-MT-cNj">
+                        <rect key="frame" x="20" y="61" width="440" height="159"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <view key="contentView">
+                            <rect key="frame" x="1" y="1" width="438" height="157"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" verticalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="bpz-PV-IHU">
+                                    <rect key="frame" x="15" y="15" width="408" height="127"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="Vwd-Ln-gdV">
+                                        <rect key="frame" x="0.0" y="0.0" width="408" height="127"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <textView editable="NO" selectable="NO" drawsBackground="NO" importsGraphics="NO" verticallyResizable="YES" allowsNonContiguousLayout="YES" id="USI-j5-h0r">
+                                                <rect key="frame" x="0.0" y="0.0" width="411" height="127"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <color key="backgroundColor" red="0.92045454550000005" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                <size key="minSize" width="408" height="127"/>
+                                                <size key="maxSize" width="463" height="10000000"/>
+                                                <attributedString key="textStorage">
+                                                    <fragment content="IMPORTANT:">
+                                                        <attributes>
+                                                            <font key="NSFont" size="17" name="LucidaGrande"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <font key="NSFont" size="11" name="LucidaGrande"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <font key="NSFont" size="6" name="LucidaGrande"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Decrypting safe messages requires a key stored ">
+                                                        <attributes>
+                                                            <font key="NSFont" size="14" name="LucidaGrande"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="only on this computer">
+                                                        <attributes>
+                                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=".">
+                                                        <attributes>
+                                                            <font key="NSFont" size="14" name=".LucidaGrandeUI"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" There will be ">
+                                                        <attributes>
+                                                            <font key="NSFont" size="14" name="LucidaGrande"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="no way">
+                                                        <attributes>
+                                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content"> of retrieving your data if you lose this device. Even we cannot decrypt your messages without it. To prevent data loss you can </string>
+                                                        <attributes>
+                                                            <font key="NSFont" size="14" name="LucidaGrande"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="back up your key">
+                                                        <attributes>
+                                                            <font key="NSFont" size="14" name="LucidaGrande-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" in a safe place (such as a USB stick), either now or at a later stage.">
+                                                        <attributes>
+                                                            <font key="NSFont" size="14" name="LucidaGrande"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <color key="insertionPointColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <size key="minSize" width="408" height="127"/>
+                                                <size key="maxSize" width="463" height="10000000"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </clipView>
+                                    <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="gc6-Z7-RLT">
+                                        <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </scroller>
+                                    <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="HLw-O9-1Me">
+                                        <rect key="frame" x="-100" y="-100" width="16" height="155"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </scroller>
+                                </scrollView>
+                            </subviews>
+                        </view>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bpz-PV-IHU" secondAttribute="trailing" constant="16" id="Ido-xZ-LC8"/>
+                            <constraint firstItem="bpz-PV-IHU" firstAttribute="top" secondItem="F6Q-MT-cNj" secondAttribute="top" constant="16" id="JS8-Na-COK"/>
+                            <constraint firstItem="bpz-PV-IHU" firstAttribute="leading" secondItem="F6Q-MT-cNj" secondAttribute="leading" constant="16" id="l7T-bV-Uoe"/>
+                            <constraint firstAttribute="bottom" secondItem="bpz-PV-IHU" secondAttribute="bottom" constant="16" id="l9V-Qk-eFh"/>
+                        </constraints>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" cyan="0.0" magenta="0.0" yellow="0.0" black="0.0" alpha="0.75" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                    </box>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6ie-aF-P2Q" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="20" id="4ZR-Wd-4o6"/>
+                    <constraint firstAttribute="bottom" secondItem="rqM-lv-yJ0" secondAttribute="bottom" constant="20" id="4v9-Po-Sdd"/>
+                    <constraint firstItem="rqM-lv-yJ0" firstAttribute="top" secondItem="F6Q-MT-cNj" secondAttribute="bottom" constant="20" id="8c0-0P-dk2"/>
+                    <constraint firstAttribute="trailing" secondItem="6ie-aF-P2Q" secondAttribute="trailing" constant="20" id="Bpg-oU-bZ3"/>
+                    <constraint firstAttribute="trailing" secondItem="F6Q-MT-cNj" secondAttribute="trailing" constant="20" id="Dgr-l4-muy"/>
+                    <constraint firstAttribute="bottom" secondItem="ftM-aR-a8B" secondAttribute="bottom" constant="20" id="FBm-sh-sCE"/>
+                    <constraint firstAttribute="trailing" secondItem="rqM-lv-yJ0" secondAttribute="trailing" constant="20" id="Jzg-b6-1Me"/>
+                    <constraint firstItem="F6Q-MT-cNj" firstAttribute="top" secondItem="6ie-aF-P2Q" secondAttribute="bottom" constant="9" id="d1R-U3-Y4t"/>
+                    <constraint firstItem="F6Q-MT-cNj" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="v9D-rU-bDb"/>
+                    <constraint firstItem="6ie-aF-P2Q" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="z4y-c6-uh7"/>
+                    <constraint firstItem="ftM-aR-a8B" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="zsH-Qi-cpe"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+        </window>
+    </objects>
+    <resources>
+        <image name="secureLock32" width="32" height="32"/>
+        <sound name="DingLing"/>
+    </resources>
+</document>

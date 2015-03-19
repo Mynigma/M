@@ -1,0 +1,129 @@
+
+/* Class = "IBUINavigationItem"; title = "Devices"; ObjectID = "0Jo-HV-gah"; */
+"0Jo-HV-gah.title" = "Devices";
+
+/* Class = "IBUILabel"; text = "Copy sent messages into 'Sent' folder"; ObjectID = "1y0-Ft-hka"; */
+"1y0-Ft-hka.text" = "Copier les messages envoyés dans le dossier 'envoyés'";
+
+/* Class = "IBUILabel"; text = "User name"; ObjectID = "2FZ-me-lem"; */
+"2FZ-me-lem.text" = "Nom d'utilisateur";
+
+/* Class = "IBUILabel"; text = "Devices"; ObjectID = "2np-16-qPX"; */
+"2np-16-qPX.text" = "Devices";
+
+/* Class = "IBUILabel"; text = "Set up test account"; ObjectID = "47s-T4-fbQ"; */
+"47s-T4-fbQ.text" = "Set up test account";
+
+/* Class = "IBUILabel"; text = "Account name"; ObjectID = "605-xF-NHf"; */
+"605-xF-NHf.text" = "Nom de compte";
+
+/* Class = "IBUIButton"; normalTitle = "more"; ObjectID = "6B3-Q8-bu6"; */
+"6B3-Q8-bu6.normalTitle" = "plus";
+
+/* Class = "IBUILabel"; text = "keyLabel"; ObjectID = "AEY-ky-T5l"; */
+"AEY-ky-T5l.text" = "keyLabel";
+
+/* Class = "IBUILabel"; text = "keyLabel"; ObjectID = "BNF-QN-Akh"; */
+"BNF-QN-Akh.text" = "keyLabel";
+
+/* Class = "IBUILabel"; text = "Outgoing"; ObjectID = "Bps-ub-doQ"; */
+"Bps-ub-doQ.text" = "Outgoing";
+
+/* Class = "IBUILabel"; text = "keyLabel"; ObjectID = "Fkk-Pq-iyN"; */
+"Fkk-Pq-iyN.text" = "keyLabel";
+
+/* Class = "IBUILabel"; text = "Port"; ObjectID = "G9c-Su-m9d"; */
+"G9c-Su-m9d.text" = "Port";
+
+/* Class = "IBUILabel"; text = "Keys"; ObjectID = "Hhg-Gd-k2q"; */
+"Hhg-Gd-k2q.text" = "Keys";
+
+/* Class = "IBUILabel"; text = "Last synced: never"; ObjectID = "IKH-SO-rYS"; */
+"IKH-SO-rYS.text" = "Last synced: never";
+
+/* Class = "IBUILabel"; text = "User name"; ObjectID = "JJH-6s-8E7"; */
+"JJH-6s-8E7.text" = "Nom d'utilisateur";
+
+/* Class = "IBUILabel"; text = "Sender name"; ObjectID = "QqY-qv-POJ"; */
+"QqY-qv-POJ.text" = "Nom de l'émetteur";
+
+/* Class = "IBUILabel"; text = "S/MIME"; ObjectID = "RVA-P0-naC"; */
+"RVA-P0-naC.text" = "S/MIME";
+
+/* Class = "IBUILabel"; text = "Add a new account"; ObjectID = "VPM-v5-a9D"; */
+"VPM-v5-a9D.text" = "Add a new account";
+
+/* Class = "IBUILabel"; text = "Roman's MacBook Pro"; ObjectID = "VcQ-zi-Jj2"; */
+"VcQ-zi-Jj2.text" = "Roman's MacBook Pro";
+
+/* Class = "IBUINavigationItem"; title = "Credits"; ObjectID = "XyO-uc-3fO"; */
+"XyO-uc-3fO.title" = "Credits";
+
+/* Class = "IBUILabel"; text = "Untrusted"; ObjectID = "YLz-Qj-CsN"; */
+"YLz-Qj-CsN.text" = "Untrusted";
+
+/* Class = "IBUISegmentedControl"; Yws-Gs-tOa.segmentTitles[0] = "SSL"; ObjectID = "Yws-Gs-tOa"; */
+"Yws-Gs-tOa.segmentTitles[0]" = "SSL";
+
+/* Class = "IBUISegmentedControl"; Yws-Gs-tOa.segmentTitles[1] = "StartTLS"; ObjectID = "Yws-Gs-tOa"; */
+"Yws-Gs-tOa.segmentTitles[1]" = "StartTLS";
+
+/* Class = "IBUISegmentedControl"; Yws-Gs-tOa.segmentTitles[2] = "plain"; ObjectID = "Yws-Gs-tOa"; */
+"Yws-Gs-tOa.segmentTitles[2]" = "plain";
+
+/* Class = "IBUILabel"; text = "PGP"; ObjectID = "dFx-3B-NCG"; */
+"dFx-3B-NCG.text" = "PGP";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "eCU-E9-Hb1"; */
+"eCU-E9-Hb1.text" = "Label";
+
+/* Class = "IBUILabel"; text = "General"; ObjectID = "gyw-iw-CCm"; */
+"gyw-iw-CCm.text" = "General";
+
+/* Class = "IBUILabel"; text = "Password"; ObjectID = "jtx-u5-jGY"; */
+"jtx-u5-jGY.text" = "Mot de passe";
+
+/* Class = "IBUIBarButtonItem"; title = "Cancel"; ObjectID = "kDj-iw-h1z"; */
+"kDj-iw-h1z.title" = "Annuler";
+
+/* Class = "IBUILabel"; text = "Credits"; ObjectID = "kgq-GS-Vln"; */
+"kgq-GS-Vln.text" = "Credits";
+
+/* Class = "IBUILabel"; text = "Setup assistant"; ObjectID = "kkD-CO-Ed7"; */
+"kkD-CO-Ed7.text" = "Assistant de configuration";
+
+/* Class = "IBUILabel"; text = "Testing connection..."; ObjectID = "mB6-Rh-Cpd"; */
+"mB6-Rh-Cpd.text" = "Testing connection...";
+
+/* Class = "IBUINavigationItem"; title = "Accounts"; ObjectID = "ouI-da-7rQ"; */
+"ouI-da-7rQ.title" = "Comptes";
+
+/* Class = "IBUILabel"; text = "Incoming"; ObjectID = "qNZ-he-q6I"; */
+"qNZ-he-q6I.text" = "Incoming";
+
+/* Class = "IBUILabel"; text = "Server host"; ObjectID = "r8A-kg-Tty"; */
+"r8A-kg-Tty.text" = "Serveur hôte";
+
+/* Class = "IBUISegmentedControl"; sSe-tV-mIn.segmentTitles[0] = "SSL"; ObjectID = "sSe-tV-mIn"; */
+"sSe-tV-mIn.segmentTitles[0]" = "SSL";
+
+/* Class = "IBUISegmentedControl"; sSe-tV-mIn.segmentTitles[1] = "StartTLS"; ObjectID = "sSe-tV-mIn"; */
+"sSe-tV-mIn.segmentTitles[1]" = "StartTLS";
+
+/* Class = "IBUISegmentedControl"; sSe-tV-mIn.segmentTitles[2] = "plain"; ObjectID = "sSe-tV-mIn"; */
+"sSe-tV-mIn.segmentTitles[2]" = "plain";
+
+/* Class = "IBUINavigationItem"; title = "Account Settings"; ObjectID = "vBb-cS-Jgo"; */
+"vBb-cS-Jgo.title" = "Account Settings";
+
+/* Class = "IBUILabel"; text = "Server host"; ObjectID = "wDk-XQ-rVi"; */
+"wDk-XQ-rVi.text" = "Serveur hôte";
+
+/* Class = "IBUILabel"; text = "Port"; ObjectID = "xv0-OI-tc7"; */
+"xv0-OI-tc7.text" = "Port";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "yBb-xD-oTX"; */
+"yBb-xD-oTX.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Password"; ObjectID = "zbT-0d-cVT"; */
+"zbT-0d-cVT.text" = "Mot de passe";

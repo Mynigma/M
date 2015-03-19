@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PullToReloadViewController">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY" customClass="ReloadingView">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box autoresizesSubviews="NO" title="Box" boxType="custom" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="iKP-qt-LeT">
+                    <rect key="frame" x="-1" y="0.0" width="393" height="300"/>
+                    <view key="contentView">
+                        <rect key="frame" x="1" y="1" width="391" height="298"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <color key="borderColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                    <color key="fillColor" cyan="0.022429435479999999" magenta="0.01436491935" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                </box>
+                <imageView wantsLayer="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XDT-yT-CpQ">
+                    <rect key="frame" x="188" y="26" width="16" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="FcT-EZ-xKE"/>
+                        <constraint firstAttribute="width" constant="16" id="g3s-7q-wA8"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="ePZ-Tw-zsW"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Rvz-Cm-ho5">
+                    <rect key="frame" x="180" y="7" width="32" height="11"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="INBOX" id="4kF-a6-mql">
+                        <font key="font" metaFont="miniSystem"/>
+                        <color key="textColor" cyan="0.14000000000000001" magenta="0.10000000000000001" yellow="0.080000000000000002" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <progressIndicator hidden="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="dJU-qV-3cL">
+                    <rect key="frame" x="188" y="26" width="16" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="akh-Mx-QBB"/>
+                        <constraint firstAttribute="width" constant="16" id="wWs-IN-aVK"/>
+                    </constraints>
+                </progressIndicator>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="dJU-qV-3cL" secondAttribute="centerX" id="58u-Vb-0yx"/>
+                <constraint firstAttribute="centerX" secondItem="XDT-yT-CpQ" secondAttribute="centerX" id="E4z-JL-8gb"/>
+                <constraint firstAttribute="trailing" secondItem="iKP-qt-LeT" secondAttribute="trailing" constant="-1" id="Qkx-dJ-7HS"/>
+                <constraint firstAttribute="bottom" secondItem="Rvz-Cm-ho5" secondAttribute="bottom" constant="7" id="ZZJ-TY-Wow"/>
+                <constraint firstItem="Rvz-Cm-ho5" firstAttribute="top" secondItem="dJU-qV-3cL" secondAttribute="bottom" constant="8" id="aOQ-Nb-Te4"/>
+                <constraint firstAttribute="centerX" secondItem="Rvz-Cm-ho5" secondAttribute="centerX" id="cLa-Bd-sKb"/>
+                <constraint firstItem="iKP-qt-LeT" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="-250" id="nd8-AD-w4v"/>
+                <constraint firstItem="iKP-qt-LeT" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="-1" id="otf-im-bCn"/>
+                <constraint firstItem="XDT-yT-CpQ" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="8" id="rFV-0P-DMv"/>
+                <constraint firstItem="dJU-qV-3cL" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="8" id="wTS-zI-FxZ"/>
+                <constraint firstAttribute="bottom" secondItem="iKP-qt-LeT" secondAttribute="bottom" id="z6d-wG-CY1"/>
+            </constraints>
+            <connections>
+                <outlet property="circularProgressIndicator" destination="dJU-qV-3cL" id="Zc2-Mq-6Zx"/>
+                <outlet property="feedbackLabel" destination="Rvz-Cm-ho5" id="lOx-e7-hQZ"/>
+                <outlet property="progressImageView" destination="XDT-yT-CpQ" id="5fi-8x-04a"/>
+            </connections>
+        </customView>
+    </objects>
+</document>

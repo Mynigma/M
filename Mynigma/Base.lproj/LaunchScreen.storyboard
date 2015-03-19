@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oHQ-Ma-fur">
+    <dependencies>
+        <deployment version="2048" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--M - Safe email made simple-->
+        <scene sceneID="0dz-fs-kxr">
+            <objects>
+                <viewController id="pr6-Zb-zRR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lYR-Va-7c5"/>
+                        <viewControllerLayoutGuide type="bottom" id="ePy-dw-oVt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H8z-Gn-RlU">
+                        <rect key="frame" x="0.0" y="0.0" width="788" height="492"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qDC-Nb-7fX">
+                                <rect key="frame" x="0.0" y="0.0" width="788" height="492"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="1JT-VY-m1M">
+                                    <rect key="frame" x="0.0" y="0.0" width="788" height="492"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xFN-th-QEf">
+                                            <rect key="frame" x="319" y="171" width="150" height="150"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="1re-oM-SaM">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG_Muenze.png" translatesAutoresizingMaskIntoConstraints="NO" id="buR-AL-pNz" customClass="TintedImageView">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="buR-AL-pNz" secondAttribute="bottom" id="F9c-b1-cRu"/>
+                                                    <constraint firstAttribute="trailing" secondItem="buR-AL-pNz" secondAttribute="trailing" id="Rw8-xF-Kg8"/>
+                                                    <constraint firstItem="buR-AL-pNz" firstAttribute="top" secondItem="1re-oM-SaM" secondAttribute="top" id="TXp-wQ-2Rb"/>
+                                                    <constraint firstItem="buR-AL-pNz" firstAttribute="leading" secondItem="1re-oM-SaM" secondAttribute="leading" id="uiy-hi-UOy"/>
+                                                </constraints>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="light"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="centerX" secondItem="xFN-th-QEf" secondAttribute="centerX" id="VIp-II-OXq"/>
+                                        <constraint firstAttribute="centerY" secondItem="xFN-th-QEf" secondAttribute="centerY" id="bWp-rp-wfL"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qDC-Nb-7fX" firstAttribute="leading" secondItem="H8z-Gn-RlU" secondAttribute="leading" id="2GV-wF-G3r"/>
+                            <constraint firstAttribute="trailing" secondItem="qDC-Nb-7fX" secondAttribute="trailing" id="6Qu-vj-NnD"/>
+                            <constraint firstItem="ePy-dw-oVt" firstAttribute="top" secondItem="qDC-Nb-7fX" secondAttribute="bottom" id="UPd-Mm-hZp"/>
+                            <constraint firstItem="qDC-Nb-7fX" firstAttribute="top" secondItem="lYR-Va-7c5" secondAttribute="bottom" id="aYJ-KO-cqV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="M - Safe email made simple" id="Out-oo-UCh"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="788" height="600"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NyN-jg-lk9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908" y="266"/>
+        </scene>
+        <!--Mynigma-->
+        <scene sceneID="uZS-fA-xVX">
+            <objects>
+                <navigationController title="Mynigma" extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="oHQ-Ma-fur" customClass="NaviController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="eiA-Mb-m31">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.20000000000000001" green="0.32156862749999998" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" id="VDN-Mk-r3R">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.20000000000000001" green="0.32156862749999998" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="pr6-Zb-zRR" kind="relationship" relationship="rootViewController" id="Tth-o9-iy7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Waw-0P-tmg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21" y="266"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BG_Muenze.png" width="150" height="150"/>
+    </resources>
+</document>

@@ -1,0 +1,30 @@
+
+/* Class = "NSPanel"; title = "Window"; ObjectID = "1"; */
+"1.title" = "Window";
+
+/* Class = "NSButtonCell"; title = "Append diagnostics file(s)"; ObjectID = "16"; */
+"16.title" = "Append diagnostics file(s)";
+
+/* Class = "NSButtonCell"; title = "Send report"; ObjectID = "18"; */
+"18.title" = "Send report";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "20"; */
+"20.title" = "Cancel";
+
+/* Class = "NSTextFieldCell"; title = "What seems to be the problem?"; ObjectID = "22"; */
+"22.title" = "What seems to be the problem?";
+
+/* Class = "NSSegmentedCell"; 28.ibShadowedLabels[0] = "high"; ObjectID = "28"; */
+"28.ibShadowedLabels[0]" = "high";
+
+/* Class = "NSSegmentedCell"; 28.ibShadowedLabels[1] = "medium"; ObjectID = "28"; */
+"28.ibShadowedLabels[1]" = "medium";
+
+/* Class = "NSSegmentedCell"; 28.ibShadowedLabels[2] = "low"; ObjectID = "28"; */
+"28.ibShadowedLabels[2]" = "low";
+
+/* Class = "NSTextFieldCell"; title = "Priority"; ObjectID = "30"; */
+"30.title" = "Priority";
+
+/* Class = "NSTextFieldCell"; title = "Help us improve Mynigma by telling us what you are missing..."; ObjectID = "2et-is-yQp"; */
+"2et-is-yQp.title" = "Help us improve M by telling us what you are missing...";

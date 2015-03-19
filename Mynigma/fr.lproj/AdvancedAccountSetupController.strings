@@ -1,0 +1,114 @@
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "1cp-BG-vpo"; */
+"1cp-BG-vpo.title" = "Item 3";
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "4tW-y3-pvi"; */
+"4tW-y3-pvi.title" = "OtherViews";
+
+/* Class = "NSTextFieldCell"; title = "User name"; ObjectID = "7VS-OV-i72"; */
+"7VS-OV-i72.title" = "Nom d'utilisateur";
+
+/* Class = "NSTextFieldCell"; title = "Connection type"; ObjectID = "A1s-BR-mHM"; */
+"A1s-BR-mHM.title" = "Type de connection";
+
+/* Class = "NSTextFieldCell"; title = "Port"; ObjectID = "DVb-yc-oSc"; */
+"DVb-yc-oSc.title" = "Port";
+
+/* Class = "NSMenuItem"; title = "StartTLS"; ObjectID = "ExU-ah-Wmc"; */
+"ExU-ah-Wmc.title" = "StartTLS";
+
+/* Class = "NSPanel"; title = "Window"; ObjectID = "F0z-JX-Cv5"; */
+"F0z-JX-Cv5.title" = "Window";
+
+/* Class = "NSButtonCell"; title = "Done"; ObjectID = "FFu-Kx-Rr5"; */
+"FFu-Kx-Rr5.title" = "Terminé";
+
+/* Class = "NSTextFieldCell"; title = "Multiline Label"; ObjectID = "FRD-40-6Tq"; */
+"FRD-40-6Tq.title" = "Etiquette multiligne";
+
+/* Class = "NSTextFieldCell"; title = "Account name"; ObjectID = "IL8-1Z-yI9"; */
+"IL8-1Z-yI9.title" = "Nom du compte";
+
+/* Class = "NSButtonCell"; title = "Copy sent messages into 'Sent' folder"; ObjectID = "JvZ-RY-jGy"; */
+"JvZ-RY-jGy.title" = "Copier les messages envoyés dans le dossier 'envoyés'";
+
+/* Class = "NSTextFieldCell"; title = "Email account settings"; ObjectID = "LUo-qE-97l"; */
+"LUo-qE-97l.title" = "Paramètre du compte email";
+
+/* Class = "NSButtonCell"; title = "Requires authentication"; ObjectID = "Lwx-BU-Iuq"; */
+"Lwx-BU-Iuq.title" = "Identification requise";
+
+/* Class = "NSButtonCell"; title = "Check"; ObjectID = "Obv-S4-Ife"; */
+"Obv-S4-Ife.title" = "Vérifié";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "P7T-DD-sqf"; */
+"P7T-DD-sqf.title" = "Item 1";
+
+/* Class = "NSTextFieldCell"; title = "Server host"; ObjectID = "Qg2-iI-toO"; */
+"Qg2-iI-toO.title" = "Serveur hôte";
+
+/* Class = "NSBox"; title = "Incoming settings"; ObjectID = "QmZ-Z1-Ffj"; */
+"QmZ-Z1-Ffj.title" = "Paramêtres entrants";
+
+/* Class = "NSMenuItem"; title = "none"; ObjectID = "RGl-fg-PMS"; */
+"RGl-fg-PMS.title" = "Aucun";
+
+/* Class = "NSButtonCell"; title = "Check"; ObjectID = "T89-gY-BI1"; */
+"T89-gY-BI1.title" = "Vérifié";
+
+/* Class = "NSTextFieldCell"; title = "Password"; ObjectID = "VNE-rQ-aha"; */
+"VNE-rQ-aha.title" = "Mot de passe";
+
+/* Class = "NSTextFieldCell"; title = "Sender name"; ObjectID = "VmE-Qf-QTY"; */
+"VmE-Qf-QTY.title" = "Nom de l'émetteur";
+
+/* Class = "NSTextFieldCell"; title = "Footer"; ObjectID = "Vq7-FJ-BoP"; */
+"Vq7-FJ-BoP.title" = "Pied de page";
+
+/* Class = "NSMenuItem"; title = "SSL"; ObjectID = "bVx-A9-Oh6"; */
+"bVx-A9-Oh6.title" = "SSL";
+
+/* Class = "NSTextFieldCell"; title = "User name"; ObjectID = "clo-kA-a2G"; */
+"clo-kA-a2G.title" = "Nom d'utilisateur";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "czc-MC-VWd"; */
+"czc-MC-VWd.title" = "Item 2";
+
+/* Class = "NSTextFieldCell"; title = "Multiline Label"; ObjectID = "fue-J1-9F5"; */
+"fue-J1-9F5.title" = "Etiquette multiligne";
+
+/* Class = "NSMenuItem"; title = "StartTLS"; ObjectID = "hCv-SP-4Zf"; */
+"hCv-SP-4Zf.title" = "StartTLS";
+
+/* Class = "NSMenuItem"; title = "SSL"; ObjectID = "iD2-fR-VLR"; */
+"iD2-fR-VLR.title" = "SSL";
+
+/* Class = "NSTextFieldCell"; title = "Password"; ObjectID = "jQ4-5G-M9m"; */
+"jQ4-5G-M9m.title" = "Mot de passe";
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "osT-xi-IPF"; */
+"osT-xi-IPF.title" = "OtherViews";
+
+/* Class = "NSTextFieldCell"; title = "Server host"; ObjectID = "pdF-ec-e36"; */
+"pdF-ec-e36.title" = "Serveur hôte";
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "q0x-6x-acR"; */
+"q0x-6x-acR.title" = "OtherViews";
+
+/* Class = "NSMenuItem"; title = "none"; ObjectID = "thu-7J-w29"; */
+"thu-7J-w29.title" = "Aucun";
+
+/* Class = "NSBox"; title = "Outgoing settings"; ObjectID = "xU2-3y-YdS"; */
+"xU2-3y-YdS.title" = "Paramètres sortants";
+
+/* Class = "NSBox"; title = "General settings"; ObjectID = "xzB-un-w19"; */
+"xzB-un-w19.title" = "Paramètres généraux";
+
+/* Class = "NSTextFieldCell"; title = "Connection type"; ObjectID = "yHq-9P-QTk"; */
+"yHq-9P-QTk.title" = "Type de connexion";
+
+/* Class = "NSButtonCell"; title = "Requires authentication"; ObjectID = "zbU-OI-cxY"; */
+"zbU-OI-cxY.title" = "Identification requise";
+
+/* Class = "NSTextFieldCell"; title = "Port"; ObjectID = "zf5-PO-rkn"; */
+"zf5-PO-rkn.title" = "Port";

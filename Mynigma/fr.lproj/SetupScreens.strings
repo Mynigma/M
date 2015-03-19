@@ -1,0 +1,178 @@
+
+/* Class = "NSButtonCell"; title = "View our privacy policy on mynigma.org"; ObjectID = "2Qd-ua-T14"; */
+"2Qd-ua-T14.title" = "View our privacy policy on mynigma.org";
+
+/* Class = "NSTabViewItem"; label = "SuccessTab"; ObjectID = "2r7-Cf-24m"; */
+"2r7-Cf-24m.label" = "SuccessTab";
+
+/* Class = "NSButtonCell"; title = "Skip this step"; ObjectID = "34H-eK-WGE"; */
+"34H-eK-WGE.title" = "Skip this step";
+
+/* Class = "NSTextFieldCell"; title = "Messages to other Mynigma users will be made safe automatically.
+All you need to do is send an open message first."; ObjectID = "3DQ-4x-2oL"; */
+"3DQ-4x-2oL.title" = "Messages aux autres utilisateurs de M seront sécurisés par defaut.\U2028Vous n'avez qu' à envoyer un message ouvert d'abord.";
+
+/* Class = "NSButtonCell"; title = "Use normal login instead"; ObjectID = "4X5-jx-aQx"; */
+"4X5-jx-aQx.title" = "Use normal login instead";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "4YV-ry-mVr"; */
+"4YV-ry-mVr.title" = "Box";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Email address"; ObjectID = "5WG-Z1-CZD"; */
+"5WG-Z1-CZD.placeholderString" = "Adresse email";
+
+/* Class = "NSTextFieldCell"; title = "Mynigma is a lightweight, secure email client that protects your privacy."; ObjectID = "6X6-Qj-CYk"; */
+"6X6-Qj-CYk.title" = "M is a lightweight, secure email client that protects your privacy.";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "7j5-Qn-rII"; */
+"7j5-Qn-rII.title" = "Box";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "8N2-cB-fbg"; */
+"8N2-cB-fbg.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "Account import"; ObjectID = "97L-SH-xS6"; */
+"97L-SH-xS6.title" = "Account import";
+
+/* Class = "NSTextFieldCell"; title = "Let us do the work..."; ObjectID = "BJM-EB-78N"; */
+"BJM-EB-78N.title" = "Backup";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "DmE-CB-qQ8"; */
+"DmE-CB-qQ8.title" = "Box";
+
+/* Class = "NSButtonCell"; title = "Connect"; ObjectID = "Eyd-c6-lJQ"; */
+"Eyd-c6-lJQ.title" = "Connect";
+
+/* Class = "NSButtonCell"; title = "IMAP: wrong user name or password"; ObjectID = "Fjk-uN-uvw"; */
+"Fjk-uN-uvw.title" = "IMAP: wrong user name or password";
+
+/* Class = "NSTextFieldCell"; title = "Alternatively, you can mitigate the risk of data loss
+by installing Mynigma on several devices."; ObjectID = "FzH-Zd-EfS"; */
+"FzH-Zd-EfS.title" = "Alternatively, you can mitigate the risk of data loss\U2028by installing M on several devices.";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "GDC-Ny-1sW"; */
+"GDC-Ny-1sW.title" = "Box";
+
+/* Class = "NSTabViewItem"; label = "ConnectingTab"; ObjectID = "H73-us-Xcm"; */
+"H73-us-Xcm.label" = "ConnectingTab";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "HRc-hp-d7B"; */
+"HRc-hp-d7B.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "Only an encrypted version is stored in the cloud.
+It can be opened by sender and recipient. That's it."; ObjectID = "HdV-kg-fRT"; */
+"HdV-kg-fRT.title" = "Seulement une version cryptée est gardé dans le nuage. Elle peut être ouverte par l'émetteur et par le distinataire. C'est ça.";
+
+/* Class = "NSTextFieldCell"; title = "A normal email is a postcard in the cloud. It's part of your online footprint."; ObjectID = "Kd8-Jv-I2K"; */
+"Kd8-Jv-I2K.title" = "Un e-mail normal est\U2028comme une carte postale dans le nuage.";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "LGM-Hh-VUD"; */
+"LGM-Hh-VUD.title" = "Box";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "LJP-Pd-kqb"; */
+"LJP-Pd-kqb.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "Setup successul"; ObjectID = "MHb-VG-75F"; */
+"MHb-VG-75F.title" = "Setup successul";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "NxP-DT-QhT"; */
+"NxP-DT-QhT.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "Email providers, advertisers, government agencies and criminals
+may access it without your knowledge."; ObjectID = "ONn-ib-mdz"; */
+"ONn-ib-mdz.title" = "Email providers, advertisers, government agencies and criminals\nmay access it without your knowledge.";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "P4F-j2-E18"; */
+"P4F-j2-E18.title" = "Box";
+
+/* Class = "NSSecureTextFieldCell"; placeholderString = "Please enter password"; ObjectID = "Pmn-Sc-yqB"; */
+"Pmn-Sc-yqB.placeholderString" = "Please enter password";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "SFi-9a-V9U"; */
+"SFi-9a-V9U.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Congratulations! Setup is complete."; ObjectID = "SXd-td-oYE"; */
+"SXd-td-oYE.title" = "Congratulations! Setup is complete.";
+
+/* Class = "NSTextFieldCell"; title = "Click \"open\" in the following window
+to import your account settings from Apple Mail."; ObjectID = "UVt-9R-KEC"; */
+"UVt-9R-KEC.title" = "Click \"open\" in the following window\U2028to import your account settings from Apple Mail.";
+
+/* Class = "NSTextFieldCell"; title = "Please select the accounts you would like to use with Mynigma"; ObjectID = "Vj4-aO-CWx"; */
+"Vj4-aO-CWx.title" = "Please select the accounts you would like to use with M";
+
+/* Class = "NSTextFieldCell"; title = "A safe message is protected by an electronic envelope."; ObjectID = "WZu-ql-rxe"; */
+"WZu-ql-rxe.title" = "Un message sécurisé est protégé par une envelope électronique.";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "YHO-Am-q62"; */
+"YHO-Am-q62.title" = "Box";
+
+/* Class = "NSButtonCell"; title = "Skip the introduction"; ObjectID = "YVv-uN-ztc"; */
+"YVv-uN-ztc.title" = "Skip the introduction";
+
+/* Class = "NSTextFieldCell"; title = "No data will ever be sent to us. Not even your email address."; ObjectID = "a9D-zL-vFe"; */
+"a9D-zL-vFe.title" = "Aucune donnée ne va jamais être envoyer à nous. Même pas votre adresse e-mail";
+
+/* Class = "NSTabViewItem"; label = "PasswordTab"; ObjectID = "aRl-QW-Mvu"; */
+"aRl-QW-Mvu.label" = "PasswordTab";
+
+/* Class = "NSTabViewItem"; label = "InvalidEmailTab"; ObjectID = "aY8-dh-cIB"; */
+"aY8-dh-cIB.label" = "InvalidEmailTab";
+
+/* Class = "NSTextFieldCell"; title = "We are setting up the encryption in the background.
+There is a lot to do, so please be patient if the app becomes a little slow.
+It should only take a minute or two.
+
+Meanwhile, may we urge you that backing up your hard drive is a great idea. This is especially true after you have installed Mynigma, as your messages no longer lie unencrypted in the cloud. If you lose your local keychain, you will also lose access to your messages.
+"; ObjectID = "av1-gH-6xd"; */
+"av1-gH-6xd.title" = "It is a good idea to back up your hard drive\U2028once the installation has finished.";
+
+/* Class = "NSButtonCell"; title = "+ Add account"; ObjectID = "cAJ-8z-2Qn"; */
+"cAJ-8z-2Qn.title" = "+ ajouter un compte";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "d4m-Hu-1El"; */
+"d4m-Hu-1El.title" = "Box";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "dPZ-ok-AZH"; */
+"dPZ-ok-AZH.title" = "Annuler";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "fUl-1P-4Q5"; */
+"fUl-1P-4Q5.title" = "Box";
+
+/* Class = "NSTabViewItem"; label = "OAuthTab"; ObjectID = "gPK-Qx-XtE"; */
+"gPK-Qx-XtE.label" = "OAuthTab";
+
+/* Class = "NSButtonCell"; title = "-"; ObjectID = "h1N-ba-YkM"; */
+"h1N-ba-YkM.title" = "-";
+
+/* Class = "NSTextFieldCell"; title = "Welcome"; ObjectID = "hc0-Yj-TZn"; */
+"hc0-Yj-TZn.title" = "Bienvenu!";
+
+/* Class = "NSTextFieldCell"; title = "The reply and all future messages will be safe."; ObjectID = "k4O-3b-5Rw"; */
+"k4O-3b-5Rw.title" = "La réponse et tous les messages de suite\U2028seront sécurisés.";
+
+/* Class = "NSTextFieldCell"; title = "Connecting to your email provider"; ObjectID = "mgy-dX-4fg"; */
+"mgy-dX-4fg.title" = "Connecting to your email provider";
+
+/* Class = "NSTextFieldCell"; title = "Open messages"; ObjectID = "r5J-5g-8vV"; */
+"r5J-5g-8vV.title" = "Messages ouverts";
+
+/* Class = "NSTextFieldCell"; title = "Entirely automatic"; ObjectID = "urR-Ac-K95"; */
+"urR-Ac-K95.title" = "Complètement automatique";
+
+/* Class = "NSTextFieldCell"; title = "We can log you in using OAuth, giving you more control over your data."; ObjectID = "vYv-Qw-UGU"; */
+"vYv-Qw-UGU.title" = "We can log you in using OAuth, giving you more control over your data.";
+
+/* Class = "NSButtonCell"; title = "Log in with OAuth"; ObjectID = "yS9-Ss-6JQ"; */
+"yS9-Ss-6JQ.title" = "Log in with OAuth";
+
+/* Class = "NSTextFieldCell"; title = "Account setup"; ObjectID = "yXQ-Vn-Saf"; */
+"yXQ-Vn-Saf.title" = "Account setup";
+
+/* Class = "NSTabViewItem"; label = "EmptyTab"; ObjectID = "ypp-kO-zS2"; */
+"ypp-kO-zS2.label" = "EmptyTab";
+
+/* Class = "NSTextFieldCell"; title = "Safe messages"; ObjectID = "yx2-yp-ZF2"; */
+"yx2-yp-ZF2.title" = "Messages securisés";
+
+/* Class = "NSTextFieldCell"; title = "Please enter a valid email address"; ObjectID = "zsY-rX-RL7"; */
+"zsY-rX-RL7.title" = "Merci de fournir une adresse e-mail valide";

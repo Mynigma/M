@@ -1,0 +1,58 @@
+//
+//   HTMLPurifier_Filter.h
+//   HTMLPurifier
+//
+//  Created by Lukas Neumann on 10.01.14.
+
+
+#import <Foundation/Foundation.h>
+
+@class HTMLPurifier_Config, HTMLPurifier_Context;
+
+/**
+ * Represents a pre or post processing filter on HTML Purifier's output
+ *
+ * Sometimes, a little ad-hoc fixing of HTML has to be done before
+ * it gets sent through HTML Purifier: you can use filters to acheive
+ * this effect. For instance, YouTube videos can be preserved using
+ * this manner. You could have used a decorator for this task, but
+ * PHP's support for them is not terribly robust, so we're going
+ * to just loop through the filters.
+ *
+ * Filters should be exited first in, last out. If there are three filters,
+ * named 1, 2 and 3, the order of execution should go 1->preFilter,
+ * 2->preFilter, 3->preFilter, purify, 3->postFilter, 2->postFilter,
+ * 1->postFilter.
+ *
+ * @note Methods are not declared abstract as it is perfectly legitimate
+ *       for an implementation not to want anything to happen on a step
+ */
+@interface HTMLPurifier_Filter : NSObject
+
+    /**
+     * Name of the filter for identification purposes.
+     * @type string
+     */
+@property NSString* name;
+
+    /**
+     * Pre-processor function, handles HTML before HTML Purifier
+     * @param string $html
+     * @param HTMLPurifier_Config $config
+     * @param HTMLPurifier_Context $context
+     * @return string
+     */
+- (NSString*)preFilter:(NSString*)html config:(HTMLPurifier_Config*)config context:(HTMLPurifier_Context*)context;
+
+    /**
+     * Post-processor function, handles HTML after HTML Purifier
+     * @param string $html
+     * @param HTMLPurifier_Config $config
+     * @param HTMLPurifier_Context $context
+     * @return string
+     */
+- (NSString*)postFilter:(NSString*)html config:(HTMLPurifier_Config*)config context:(HTMLPurifier_Context*)context;
+
+
+
+@end

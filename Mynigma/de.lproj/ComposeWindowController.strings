@@ -1,0 +1,93 @@
+
+/* Class = "NSWindow"; title = "New message"; ObjectID = "1"; */
+"1.title" = "Neue Nachricht";
+
+/* Class = "NSButtonCell"; title = "Send"; ObjectID = "27"; */
+"27.title" = "Senden";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "91"; */
+"91.title" = "Box";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "314"; */
+"314.title" = "Box";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "405"; */
+"405.title" = "Box";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "406"; */
+"406.title" = "Box";
+
+/* Class = "NSBox"; title = "CcBox"; ObjectID = "407"; */
+"407.title" = "CcBox";
+
+/* Class = "NSBox"; title = "BccBox"; ObjectID = "408"; */
+"408.title" = "BccBox";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "409"; */
+"409.title" = "Box";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "410"; */
+"410.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "From:"; ObjectID = "414"; */
+"414.title" = "Von:";
+
+/* Class = "NSTextFieldCell"; title = "To:"; ObjectID = "417"; */
+"417.title" = "An:";
+
+/* Class = "NSTextFieldCell"; title = "Bcc:"; ObjectID = "421"; */
+"421.title" = "Bcc:";
+
+/* Class = "NSTextFieldCell"; title = "Cc:"; ObjectID = "426"; */
+"426.title" = "Cc:";
+
+/* Class = "NSTextFieldCell"; title = "Reply to:"; ObjectID = "430"; */
+"430.title" = "Antwort an:";
+
+/* Class = "NSTextFieldCell"; title = "Subject:"; ObjectID = "433"; */
+"433.title" = "Betreff:";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "475"; */
+"475.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "Safe"; ObjectID = "478"; */
+"478.title" = "Sicher";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "75g-0G-Zup"; */
+"75g-0G-Zup.title" = "Box";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "7qD-5O-MUn"; */
+"7qD-5O-MUn.title" = "Box";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "PE2-TS-9Yg"; */
+"PE2-TS-9Yg.title" = "Box";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "Wko-i1-Cfm"; */
+"Wko-i1-Cfm.title" = "Box";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "WvK-Sf-nZd"; */
+"WvK-Sf-nZd.title" = "Box";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "Xx3-IO-c7T"; */
+"Xx3-IO-c7T.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "This message will be open because the encryption feature has not been activated with this contact. Why not invite them to use Mynigma? If you send them an open message, they will be able to send you a safe reply with Mynigma."; ObjectID = "aje-9N-nhp"; */
+"aje-9N-nhp.title" = "Diese Nachricht ist offen, da mit diesem Kontakt noch keine sichere Verbindung aufgebaut wurde. \nLaden Sie \"rote\" Kontakte doch einfach ein, auch M zu benutzen. Wenn Sie eine offene Nachricht senden, wird der Empfänger in der Lage sein, Ihnen sicher mit M zu antworten.";
+
+/* Class = "NSButtonCell"; title = "Don't show this again"; ObjectID = "c4U-aL-QBz"; */
+"c4U-aL-QBz.title" = "Nicht erneut zeigen";
+
+/* Class = "NSTextFieldCell"; title = "Not yet downloaded"; ObjectID = "c4g-cd-73M"; */
+"c4g-cd-73M.title" = "Noch nicht geladen";
+
+/* Class = "NSTextFieldCell"; title = "Cc/Bcc"; ObjectID = "idr-dz-yq6"; */
+"idr-dz-yq6.title" = "Cc/Bcc";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "sc3-CC-6JI"; */
+"sc3-CC-6JI.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "woP-l2-hkH"; */
+"woP-l2-hkH.title" = "Label";
+
+/* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "x4R-d1-j0C"; */
+"x4R-d1-j0C.title" = "Label";

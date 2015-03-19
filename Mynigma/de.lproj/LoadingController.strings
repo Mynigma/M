@@ -1,0 +1,6 @@
+
+/* Class = "IBUILabel"; text = "Loading..."; ObjectID = "Sn7-ns-7Go"; */
+"Sn7-ns-7Go.text" = "Laden...";
+
+/* Class = "IBUIButton"; normalTitle = "Cancel"; ObjectID = "a5f-sp-hpA"; */
+"a5f-sp-hpA.normalTitle" = "Abbrechen";

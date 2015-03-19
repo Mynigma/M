@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>notes</key>
+	<array>
+		<string>notes</string>
+		<string>notiz</string>
+	</array>
+	<key>archive</key>
+	<array>
+		<string>archiv</string>
+	</array>
+	<key>drafts</key>
+	<array>
+		<string>draft</string>
+		<string>entwürfe</string>
+		<string>entwurf</string>
+		<string>brouillon</string>
+	</array>
+	<key>sent</key>
+	<array>
+		<string>messages envoyés</string>
+		<string>sent</string>
+		<string>gesendet</string>
+		<string>sent messages</string>
+	</array>
+	<key>bin</key>
+	<array>
+		<string>trash</string>
+		<string>deleted</string>
+		<string>papierkorb</string>
+		<string>gelöscht</string>
+		<string>bin</string>
+		<string>corbeille</string>
+		<string>supprimé</string>
+	</array>
+	<key>spam</key>
+	<array>
+		<string>spam</string>
+		<string>junk</string>
+		<string>bulk</string>
+		<string>courriers indésirables</string>
+	</array>
+	<key>all mail</key>
+	<array>
+		<string>all mail</string>
+		<string>alle nachrichten</string>
+		<string>tous les messages</string>
+	</array>
+	<key>inbox</key>
+	<array>
+		<string>inbox</string>
+		<string>boîte de réception</string>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,12 @@
+
+/* Class = "NSPanel"; title = "Window"; ObjectID = "F0z-JX-Cv5"; */
+"F0z-JX-Cv5.title" = "Window";
+
+/* Class = "NSTextFieldCell"; title = "What would you like the new template to be called?"; ObjectID = "NAV-BB-8cM"; */
+"NAV-BB-8cM.title" = "What would you like the new template to be called?";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "Toa-El-L9R"; */
+"Toa-El-L9R.title" = "Cancel";
+
+/* Class = "NSButtonCell"; title = "OK"; ObjectID = "vje-Dg-cMz"; */
+"vje-Dg-cMz.title" = "OK";

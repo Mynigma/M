@@ -1,0 +1,21 @@
+
+/* Class = "NSPanel"; title = "Window"; ObjectID = "1"; */
+"1.title" = "Window";
+
+/* Class = "NSSegmentedCell"; 18.ibShadowedLabels[0] = "Personal use"; ObjectID = "18"; */
+"18.ibShadowedLabels[0]" = "Personal use";
+
+/* Class = "NSSegmentedCell"; 18.ibShadowedLabels[1] = "Commercial use"; ObjectID = "18"; */
+"18.ibShadowedLabels[1]" = "Commercial use";
+
+/* Class = "NSButtonCell"; title = "OK"; ObjectID = "20"; */
+"20.title" = "OK";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "22"; */
+"22.title" = "Cancel";
+
+/* Class = "NSButtonCell"; title = "I have read and accept these terms"; ObjectID = "24"; */
+"24.title" = "I have read and accept these terms";
+
+/* Class = "NSTextFieldCell"; title = "License agreement"; ObjectID = "37"; */
+"37.title" = "License agreement";

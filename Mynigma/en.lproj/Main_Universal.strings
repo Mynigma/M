@@ -1,0 +1,129 @@
+
+/* Class = "IBUIButton"; normalTitle = "Cc / Bcc"; ObjectID = "3je-y9-B7P"; */
+"3je-y9-B7P.normalTitle" = "Cc / Bcc";
+
+/* Class = "IBUINavigationItem"; title = "Title"; ObjectID = "6JJ-YK-1mY"; */
+"6JJ-YK-1mY.title" = "Title";
+
+/* Class = "IBUILabel"; text = "Loaded 3 of 6 folders"; ObjectID = "7OJ-NK-8aF"; */
+"7OJ-NK-8aF.text" = "Loaded 3 of 6 folders";
+
+/* Class = "IBUIButton"; normalTitle = "+"; ObjectID = "86x-Ip-haO"; */
+"86x-Ip-haO.normalTitle" = "+";
+
+/* Class = "IBUILabel"; text = "Account"; ObjectID = "8A1-xM-kN4"; */
+"8A1-xM-kN4.text" = "Account";
+
+/* Class = "IBUITextField"; placeholder = "Subject"; ObjectID = "9IX-cu-Gnb"; */
+"9IX-cu-Gnb.placeholder" = "Subject";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "AzX-wC-HUl"; */
+"AzX-wC-HUl.text" = "Label";
+
+/* Class = "IBUINavigationItem"; title = "Safe message"; ObjectID = "CV5-YV-1oj"; */
+"CV5-YV-1oj.title" = "Safe message";
+
+/* Class = "IBUILabel"; text = "Account"; ObjectID = "Dor-dn-bhH"; */
+"Dor-dn-bhH.text" = "Account";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "FUw-YI-kc0"; */
+"FUw-YI-kc0.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Nothing to display"; ObjectID = "GHD-Lk-cN1"; */
+"GHD-Lk-cN1.text" = "Nothing to display";
+
+/* Class = "IBUISearchBar"; I4z-QR-WQK.scopeButtonTitles[0] = "All"; ObjectID = "I4z-QR-WQK"; */
+"I4z-QR-WQK.scopeButtonTitles[0]" = "All";
+
+/* Class = "IBUISearchBar"; I4z-QR-WQK.scopeButtonTitles[1] = "Unread"; ObjectID = "I4z-QR-WQK"; */
+"I4z-QR-WQK.scopeButtonTitles[1]" = "Unread";
+
+/* Class = "IBUISearchBar"; I4z-QR-WQK.scopeButtonTitles[2] = "Starred"; ObjectID = "I4z-QR-WQK"; */
+"I4z-QR-WQK.scopeButtonTitles[2]" = "Starred";
+
+/* Class = "IBUISearchBar"; I4z-QR-WQK.scopeButtonTitles[3] = "Files"; ObjectID = "I4z-QR-WQK"; */
+"I4z-QR-WQK.scopeButtonTitles[3]" = "Files";
+
+/* Class = "IBUISearchBar"; I4z-QR-WQK.scopeButtonTitles[4] = "Safe"; ObjectID = "I4z-QR-WQK"; */
+"I4z-QR-WQK.scopeButtonTitles[4]" = "Safe";
+
+/* Class = "IBUISegmentedControl"; JDu-fT-jSR.segmentTitles[0] = "All"; ObjectID = "JDu-fT-jSR"; */
+"JDu-fT-jSR.segmentTitles[0]" = "All";
+
+/* Class = "IBUISegmentedControl"; JDu-fT-jSR.segmentTitles[1] = "Unread"; ObjectID = "JDu-fT-jSR"; */
+"JDu-fT-jSR.segmentTitles[1]" = "Unread";
+
+/* Class = "IBUISegmentedControl"; JDu-fT-jSR.segmentTitles[2] = "Flagged"; ObjectID = "JDu-fT-jSR"; */
+"JDu-fT-jSR.segmentTitles[2]" = "Flagged";
+
+/* Class = "IBUISegmentedControl"; JDu-fT-jSR.segmentTitles[3] = "Safe"; ObjectID = "JDu-fT-jSR"; */
+"JDu-fT-jSR.segmentTitles[3]" = "Safe";
+
+/* Class = "IBUILabel"; text = "Choose existing..."; ObjectID = "L3w-s8-ADl"; */
+"L3w-s8-ADl.text" = "Choose existing...";
+
+/* Class = "IBUITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."; ObjectID = "N62-Md-0zO"; */
+"N62-Md-0zO.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "Qpv-jG-7Bb"; */
+"Qpv-jG-7Bb.normalTitle" = "Button";
+
+/* Class = "IBUILabel"; text = "Downloaded"; ObjectID = "S5W-KE-gE9"; */
+"S5W-KE-gE9.text" = "Downloaded";
+
+/* Class = "IBUILabel"; text = "Heading"; ObjectID = "SE4-4b-Aj8"; */
+"SE4-4b-Aj8.text" = "Heading";
+
+/* Class = "IBUIButton"; normalTitle = "+"; ObjectID = "VVS-G8-yAp"; */
+"VVS-G8-yAp.normalTitle" = "+";
+
+/* Class = "IBUITextField"; placeholder = "Subject"; ObjectID = "ZiE-06-Ysk"; */
+"ZiE-06-Ysk.placeholder" = "Subject";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "cUs-RU-TVj"; */
+"cUs-RU-TVj.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "dya-EE-Onj"; */
+"dya-EE-Onj.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Take new photo or video..."; ObjectID = "e67-a0-SnF"; */
+"e67-a0-SnF.text" = "Take new photo or video...";
+
+/* Class = "IBUIButton"; normalTitle = "13"; ObjectID = "fij-sG-dYh"; */
+"fij-sG-dYh.normalTitle" = "13";
+
+/* Class = "IBUIButton"; normalTitle = "Error downloading. Tap to try again..."; ObjectID = "g4A-mN-cp3"; */
+"g4A-mN-cp3.normalTitle" = "Error downloading. Tap to try again...";
+
+/* Class = "IBUINavigationItem"; title = "Inbox"; ObjectID = "lec-O1-T8N"; */
+"lec-O1-T8N.title" = "Inbox";
+
+/* Class = "IBUILabel"; text = "Folder"; ObjectID = "qZv-oW-4V8"; */
+"qZv-oW-4V8.text" = "Folder";
+
+/* Class = "IBUISearchBar"; placeholder = "Search"; ObjectID = "r6b-bM-cch"; */
+"r6b-bM-cch.placeholder" = "Search";
+
+/* Class = "IBUILabel"; text = "Alert message"; ObjectID = "s1J-3m-lDG"; */
+"s1J-3m-lDG.text" = "Alert message";
+
+/* Class = "IBUILabel"; text = "134 KB"; ObjectID = "trg-jb-7yD"; */
+"trg-jb-7yD.text" = "134 KB";
+
+/* Class = "IBUILabel"; text = "No more messages to show"; ObjectID = "xbV-yF-3qx"; */
+"xbV-yF-3qx.text" = "No more messages to show";
+
+/* Class = "IBUIBarButtonItem"; title = "Send"; ObjectID = "xz6-kp-J91"; */
+"xz6-kp-J91.title" = "Send";
+
+/* Class = "IBUILabel"; text = "Photo3452.png"; ObjectID = "y1p-WZ-9xW"; */
+"y1p-WZ-9xW.text" = "Photo3452.png";
+
+/* Class = "IBUIButton"; normalTitle = "Show quoted text"; ObjectID = "ywj-L1-QUn"; */
+"ywj-L1-QUn.normalTitle" = "Show quoted text";
+
+/* Class = "IBUILabel"; text = "If music be the food of love play on/Give me excess of it/That surfeiting the appetite/May sicken and so die/"; ObjectID = "yyV-ud-Kk3"; */
+"yyV-ud-Kk3.text" = "If music be the food of love play on/Give me excess of it/That surfeiting the appetite/May sicken and so die/";
+
+/* Class = "IBUILabel"; text = "Today 10:20"; ObjectID = "zLj-Gq-UCw"; */
+"zLj-Gq-UCw.text" = "Today 10:20";

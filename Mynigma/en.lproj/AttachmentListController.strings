@@ -1,0 +1,24 @@
+
+/* Class = "NSPanel"; title = "Window"; ObjectID = "1"; */
+"1.title" = "Window";
+
+/* Class = "NSButtonCell"; title = "OK"; ObjectID = "59"; */
+"59.title" = "OK";
+
+/* Class = "NSButtonCell"; title = "Open"; ObjectID = "63"; */
+"63.title" = "Open";
+
+/* Class = "NSButtonCell"; title = "Save as..."; ObjectID = "67"; */
+"67.title" = "Save as...";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "6KD-a8-Ddz"; */
+"6KD-a8-Ddz.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "Not yet downloaded"; ObjectID = "6pf-Wr-yaY"; */
+"6pf-Wr-yaY.title" = "Not yet downloaded";
+
+/* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "KP6-eC-cSo"; */
+"KP6-eC-cSo.title" = "Label";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "e9w-kG-vKE"; */
+"e9w-kG-vKE.title" = "Box";
